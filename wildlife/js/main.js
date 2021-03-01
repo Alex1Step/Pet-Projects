@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $('.slider').slick({
         arrows: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
         dots: false,
         slidesToShow: 2,
         centerMode: true,

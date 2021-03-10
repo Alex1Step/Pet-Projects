@@ -72,12 +72,20 @@ header nav ul li a {
   line-height: 60px;
   color: #f7f7f7;
   text-decoration: none;
-  /* for effects */
-  /* transition: all 2s; */
+  /* for animation */
+  background-image: linear-gradient(#cd6326, #cd6326);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
 }
 
 header nav ul li a:hover {
-  border: 2px solid #cd6326;
+  background-size: 100% 2px;
+}
+
+.find-icon:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .signIn-btn {
@@ -275,6 +283,8 @@ h1 {
   top: 260px;
   left: -30px;
   background: url("../img/prevArrow.png");
+  display: block;
+  transition: transform 0.3s linear;
 }
 
 .next {
@@ -285,6 +295,13 @@ h1 {
   top: 260px;
   left: 1140px;
   background: url("../img/nextArrow.png");
+  display: block;
+  transition: transform 0.3s linear;
+}
+
+.prev:hover,
+.next:hover {
+  transform: rotate(1turn);
 }
 
 /* GET NOTIFIED SECTION */
@@ -381,6 +398,16 @@ footer {
   font-size: 23px;
   line-height: 60px;
   color: #f7f7f7;
+  /* for animation */
+  background-image: linear-gradient(#cd6326, #cd6326);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+.footer-menu a:hover {
+  background-size: 100% 2px;
 }
 
 .footer-menu ul {
@@ -441,4 +468,11 @@ footer {
 
 .footer-social li {
   margin-left: 27px;
+}
+
+.fb:hover,
+.insta:hover,
+.pin:hover,
+.tg:hover {
+  transform: scale(1.2, 1.2);
 }

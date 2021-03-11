@@ -106,6 +106,7 @@ header nav ul li a:hover {
 
 .signIn-btn:hover {
   background: #CD6326;
+  cursor: pointer;
 }
 
 .signIn-btn:active {
@@ -182,6 +183,7 @@ h1 {
 
 .donate-btn:hover {
   background: #E39128;
+  cursor: pointer;
 }
 
 .donate-btn:active {
@@ -240,10 +242,16 @@ h1 {
   margin-left: 60px;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .slider-item {
   width: 360px;
+  transition-duration: transform 1s;
+}
+
+.slider-item:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .slider-img-cover {
@@ -347,6 +355,7 @@ h1 {
 
 .notified-btn:hover {
   background: #E39128;
+  cursor: pointer;
 }
 
 .notified-btn:active {

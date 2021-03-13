@@ -128,6 +128,8 @@ body {
 	border-radius: 0;
 	pointer-events: none;
 }
+
+/* start */
 .piano-key::before,
 .piano-key::after {
 	content: attr(data-note);
@@ -169,7 +171,7 @@ body {
 .piano-key-letter::before {
 	content: attr(data-letter);
 }
-
+/* finish */
 .piano-key-remove-mouse:active::before {
 	color: #a2abb3;
 }

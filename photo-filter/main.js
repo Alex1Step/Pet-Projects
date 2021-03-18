@@ -5,8 +5,10 @@ const fullScr = document.querySelector('.fullscreen');
 const resetBtn = document.querySelector('.btn-reset');
 const nextImg = document.querySelector('.btn-next');
 
+let count = 0;
+
 const base = 'https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/';
-const timeOfDay = ['day/', 'night/', 'morning/', 'evening/']
+const timeOfDay = {'day':'day/', 'night':'night/', 'morning':'morning/', 'evening':'evening/'}
 const images = ['01.jpg', '02.jpg', '03.jpg', '05.jpg', '06.jpg', '07.jpg', '08.jpg', '09.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg'];
 
 controlsCollection.addEventListener('input', inputHandler, false);
@@ -79,4 +81,21 @@ function resetHandler() {
     counter += 1;
   }
   counter = 0;
+}
+
+//Load next image from link
+function nextLinkHandler() {
+  let nowHour = new Date().getHours();
+  let nextImgSrc;
+  if (nowHour>=6 && nowHour<12) {nextImgSrc = base + timeOfDay['morning'] + images[count]};
+  if (nowHour>=12 && nowHour<18) {nextImgSrc = base + timeOfDay['day'] + images[count]};
+  if (nowHour>=18 && nowHour<=23) {nextImgSrc = base + timeOfDay['evening'] + images[count]};
+  if (nowHour>=0 && nowHour<6) {nextImgSrc = base + timeOfDay['night'] + images[count]};
+  count++;
+  if (count>images.length-1) count = 0;
+  const nextImg = new Image();
+  nextImg.src = nextImgSrc;
+  nextImg.onload = () => {
+    destinationImg.src = nextImgSrc;
+  }
 }

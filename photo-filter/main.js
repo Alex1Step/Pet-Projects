@@ -4,6 +4,9 @@ const controls = document.querySelectorAll('.cntrl')
 const fullScr = document.querySelector('.fullscreen');
 const resetBtn = document.querySelector('.btn-reset');
 const nextImg = document.querySelector('.btn-next');
+const loadFile = document.querySelector('#btnInput');
+const saveFile = document.querySelector('.btn-save');
+const canvas = document.querySelector('canvas');
 
 let count = 0;
 
@@ -15,6 +18,8 @@ controlsCollection.addEventListener('input', inputHandler, false);
 fullScr.addEventListener('click', fullScrFunc, false);
 resetBtn.addEventListener('click', resetHandler, false);
 nextImg.addEventListener('click', nextLinkHandler, false);
+loadFile.addEventListener('change', loadFileHandler,false);
+saveFile.addEventListener('click', saveFileHandler, false);
 
 //CONTROLS HANDLER
 function inputHandler(EO) {
@@ -98,4 +103,21 @@ function nextLinkHandler() {
   nextImg.onload = () => {
     destinationImg.src = nextImgSrc;
   }
+}
+
+//LOAD FILE
+function loadFileHandler() {
+  console.log('done')
+  const file = loadFile.files[0];
+  const reader = new FileReader();
+  reader.onload = () => {
+    destinationImg.src = reader.result;
+  }
+  reader.readAsDataURL(file);
+}
+
+//SAVE FILE
+function saveFileHandler() {
+  const img = new Image();
+  img.setAttribute('crossOrigin', 'anonymous');
 }

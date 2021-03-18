@@ -3,11 +3,18 @@ const controlsCollection = document.querySelector('.filters');
 const controls = document.querySelectorAll('.cntrl')
 const fullScr = document.querySelector('.fullscreen');
 const resetBtn = document.querySelector('.btn-reset');
+const nextImg = document.querySelector('.btn-next');
+
+const base = 'https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/';
+const timeOfDay = ['day/', 'night/', 'morning/', 'evening/']
+const images = ['01.jpg', '02.jpg', '03.jpg', '05.jpg', '06.jpg', '07.jpg', '08.jpg', '09.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg'];
 
 controlsCollection.addEventListener('input', inputHandler, false);
 fullScr.addEventListener('click', fullScrFunc, false);
 resetBtn.addEventListener('click', resetHandler, false);
+nextImg.addEventListener('click', nextLinkHandler, false);
 
+//CONTROLS HANDLER
 function inputHandler(EO) {
   switch (EO.target.name) {
     case 'blur' : {

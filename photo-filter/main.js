@@ -107,7 +107,6 @@ function nextLinkHandler() {
 
 //LOAD FILE
 function loadFileHandler() {
-  console.log('done')
   const file = loadFile.files[0];
   const reader = new FileReader();
   reader.onload = () => {
@@ -120,4 +119,17 @@ function loadFileHandler() {
 function saveFileHandler() {
   const img = new Image();
   img.setAttribute('crossOrigin', 'anonymous');
+  img.src =  destinationImg.src;
+  img.onload = function() {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    const ctx = canvas.getContext("2d");
+    ctx.filter = `blur(${controls[0].value}px) invert(${controls[1].value}%) sepia(${controls[2].value}%) saturate(${controls[3].value}%) hue-rotate(${controls[4].value}deg)`;
+    ctx.drawImage(img, 0, 0);
+    const dataURL = canvas.toDataURL("image/jpeg");
+    let link = document.createElement('a');
+    link.href = dataURL;
+    link.download = "image.jpg";
+    link.click();
+  };
 }

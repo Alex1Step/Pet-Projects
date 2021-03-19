@@ -90,7 +90,6 @@ function resetHandler() {
 
 //Load next image from link
 function nextLinkHandler() {
-  resetHandler();
   let nowHour = new Date().getHours();
   let nextImgSrc;
   if (nowHour>=6 && nowHour<12) {nextImgSrc = base + timeOfDay['morning'] + images[count]};
@@ -102,8 +101,10 @@ function nextLinkHandler() {
   const nextImg = new Image();
   nextImg.src = nextImgSrc;
   nextImg.onload = () => {
+    resetHandler();
     destinationImg.src = nextImgSrc;
   }
+
 }
 
 //LOAD FILE

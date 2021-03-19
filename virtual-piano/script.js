@@ -40,12 +40,13 @@ function mouseDownHandler(EO) {
   EO.preventDefault();
   playAudio(`./assets/audio/${EO.target.dataset.note}.mp3`);
   EO.target.classList.add('piano-key-active');
+  EO.target.classList.add('piano-key-active-pseudo');
   for (let pianoK of pianoKeys) {
     pianoK.addEventListener('mouseenter', enterHandler, false)
     pianoK.addEventListener('mouseleave', leaveHandler, false)
   }
-  piano.addEventListener('mouseleave', mouseUpHandler, false)
-  piano.addEventListener('mouseup', mouseUpHandler, false);
+  // piano.addEventListener('mouseleave', mouseUpHandler, false)
+  document.addEventListener('mouseup', mouseUpHandler, false);
 }
 
 function enterHandler(EO) {
@@ -53,18 +54,21 @@ function enterHandler(EO) {
   EO.preventDefault();
   playAudio(`./assets/audio/${EO.target.dataset.note}.mp3`);
   EO.target.classList.add('piano-key-active');
+  EO.target.classList.add('piano-key-active-pseudo');
 }
 
 function leaveHandler(EO) {
   var EO = EO || window.event;
   EO.preventDefault();
   EO.target.classList.remove('piano-key-active');
+  EO.target.classList.remove('piano-key-active-pseudo');
 }
 
 function mouseUpHandler(EO) {
   var EO = EO || window.event;
   EO.preventDefault();
   EO.target.classList.remove('piano-key-active');
+  EO.target.classList.remove('piano-key-active-pseudo');
   for (let pianoK of pianoKeys) {
     pianoK.removeEventListener('mouseenter', enterHandler)
     pianoK.removeEventListener('mouseleave', leaveHandler)
@@ -93,8 +97,10 @@ function fullScrFunc(EO) {
 }
 
 //TOGGLE LETTERS AND NOTES VIEWS
-function toggleNotesLetters() {
-  toggleBtn[0].classList.toggle('btn-active');
-  toggleBtn[1].classList.toggle('btn-active');
-  pianoKeys.forEach(elem => elem.classList.toggle('letter'))
+function toggleNotesLetters(EO) {
+  if (!EO.target.matches(".btn-active")) {
+    toggleBtn[0].classList.toggle('btn-active');
+    toggleBtn[1].classList.toggle('btn-active');
+    pianoKeys.forEach(elem => elem.classList.toggle('letter'))
+  }
 }

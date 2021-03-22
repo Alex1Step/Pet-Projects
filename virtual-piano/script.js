@@ -1,3 +1,4 @@
+//GLOBAL CONST
 const piano = document.querySelector('.piano');
 const pianoKeys = document.querySelectorAll('.piano-key')
 const fullScr = document.querySelector('.fullscreen')

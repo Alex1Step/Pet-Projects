@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper-header {
+  width: 100%;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2a8086;
+}
+
+header {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .content {
+  width: 100%;
+  max-width: 1480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4px;
+}
+
+header .content .wrapper-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.74px;
+  color: #c5e1e5;
+}
+
+header .content .wrapper-nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+}
+
+header .content .wrapper-nav nav ul li {
+  margin-left: 52px;
+}
+
+header .content .wrapper-login {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #c5e1e5;
+}
+
+header .content .wrapper-login .login-btn {
+  width: 97px;
+  height: 52px;
+  background-color: #2a8086;
+  border: 0px solid #2a8086;
+  outline: none;
+  text-transform: uppercase;
+}
+
+header .content .wrapper-login .signup-btn {
+  width: 97px;
+  height: 52px;
+  background-color: #2a8086;
+  border: 1px solid #c5e1e6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+header .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .content ul li {
+  list-style-type: none;
+}
+
+header .content ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #c5e1e5;
+}
+
+header .content ul li button {
+  color: #c5e1e5;
+}
+/*# sourceMappingURL=style.css.map */

@@ -50,7 +50,8 @@ header {
           justify-content: flex-start;
           padding: 0;
           li {
-            margin-left: 52px;
+            white-space: nowrap;
+            margin-left: 2.75vw;
           }
         }
       }
@@ -62,6 +63,71 @@ header {
       font-size: 18px;
       line-height: 21.09px;
       color: #c5e1e5;
+
+      // search input style
+      .search-form {
+        position: relative;
+      }
+      .search-icon {
+        position: absolute;
+        background-image: url(../../assets/icons/search.png);
+        width: 32px;
+        height: 32px;
+        top: 0;
+        right: 3px;
+        &:hover {
+          display: none;
+          // opacity: 0;
+          // z-index: -1;
+        }
+      }
+      .search {
+        // -webkit-appearance: textfield;
+        // -webkit-box-sizing: content-box;
+        font-family: inherit;
+        font-size: 100%;
+      }
+      .search::-webkit-search-decoration,
+      .search::-webkit-search-cancel-button {
+        display: none;
+      }
+      .search {
+        width: 32px;
+        height: 32px;
+        padding-left: 10px;
+        background-color: #2a8086;
+        border: 1px solid #2a8086;
+        color: transparent;
+        cursor: pointer;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        &::placeholder {
+          color: #2a8086;
+        }
+      }
+      .search:hover {
+        background-color: #fff;
+      }
+      .search:focus {
+        outline: none;
+        width: 130px;
+        padding-left: 32px;
+        color: #000;
+        background-color: #fff;
+        cursor: auto;
+        -webkit-border-radius: 5em;
+        -moz-border-radius: 5em;
+        border-radius: 5em;
+        border: 1px solid #c5e1e6;
+      }
+
+      // end search input style
+
       .login-btn {
         width: 97px;
         height: 52px;

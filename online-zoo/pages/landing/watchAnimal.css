@@ -1,0 +1,36 @@
+.hero {
+  background-image: url(../../assets/images/landing-panda-1920.svg);
+  width: 100%;
+  min-height: 803px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-part {
+  width: 100%;
+  max-width: 1480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-part .video-panda-on-landing img {
+  width: 803px;
+  height: 666px;
+  -webkit-mask-image: url(../../assets/images/Vector.svg);
+          mask-image: url(../../assets/images/Vector.svg);
+}
+/*# sourceMappingURL=watchAnimal.css.map */

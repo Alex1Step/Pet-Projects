@@ -1,0 +1,24 @@
+.hero {
+  background-image: url(../../assets/images/landing-panda-1920.svg);
+  width: 100%;
+  min-height: 803px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-part {
+  width: 100%;
+  max-width: 1480px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .video-panda-on-landing {
+    img {
+      width: 803px;
+      height: 666px;
+      // clip-path: url(#clip-shape);
+      mask-image: url(../../assets/images/Vector.svg);
+    }
+  }
+}

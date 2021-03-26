@@ -166,7 +166,7 @@ header .content .wrapper-login .search::placeholder {
 
 header .content .wrapper-login .search:focus {
   outline: none;
-  width: 130px;
+  width: 150px;
   padding-left: 32px;
   color: #000;
   background-color: #fff;
@@ -220,4 +220,4 @@ header .content ul li a {
 header .content ul li button {
   color: #c5e1e5;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=header.css.map */

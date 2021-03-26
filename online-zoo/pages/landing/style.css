@@ -97,6 +97,19 @@ header .content .wrapper-login {
   font-size: 18px;
   line-height: 21.09px;
   color: #c5e1e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .content .wrapper-login ul li {
+  margin-left: 15px;
 }
 
 header .content .wrapper-login .search-form {
@@ -110,10 +123,6 @@ header .content .wrapper-login .search-icon {
   height: 32px;
   top: 0;
   right: 3px;
-}
-
-header .content .wrapper-login .search-icon:hover {
-  display: none;
 }
 
 header .content .wrapper-login .search {
@@ -153,10 +162,6 @@ header .content .wrapper-login .search::-ms-input-placeholder {
 
 header .content .wrapper-login .search::placeholder {
   color: #2a8086;
-}
-
-header .content .wrapper-login .search:hover {
-  background-color: #fff;
 }
 
 header .content .wrapper-login .search:focus {

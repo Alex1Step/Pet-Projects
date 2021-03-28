@@ -1,5 +1,15 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
 .hero {
   background-image: url(../../assets/images/landing-panda-1920.svg);
+  background-position: center bottom;
+  background-size: cover;
   width: 100%;
   min-height: 803px;
   display: flex;
@@ -10,15 +20,99 @@
 .content-part {
   width: 100%;
   max-width: 1480px;
+  min-height: 803px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  .watch-online {
+    .first-h2 {
+      margin-top: 102px;
+      font-family: "Rubik", monospace;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 72px;
+      line-height: 85.32px;
+      color: #f3f7f8;
+    }
+    .second-h2 {
+      font-family: "Rubik", monospace;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 75.84px;
+      color: #f3f7f8;
+    }
+    p {
+      display: inline-block;
+      width: 450px;
+      margin-top: 29px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #f3f7f8;
+    }
+    .watch-now-btn {
+      width: 258px;
+      height: 52px;
+      margin-top: 86px;
+      background: #ffffff;
+      border: 0px solid #ffffff;
+      box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+      border-radius: 100px;
+      text-transform: uppercase;
+      font-family: "Roboto Mono", monospace;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23.74px;
+      letter-spacing: -1px;
+      color: #0d444d;
+    }
+  }
+  .wrapper-big-panda {
+    position: relative;
+    .play-panda-video-btn {
+      background-image: url(../../assets/icons/play-btn.svg);
+      width: 120.21px;
+      height: 120.21px;
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 29px);
+      z-index: 5;
+    }
+  }
   .video-panda-on-landing {
+    width: 803px;
+    height: 666px;
+    margin-top: 47px;
+    clip-path: url(#hero-mask);
     img {
       width: 803px;
       height: 666px;
-      // clip-path: url(#clip-shape);
-      mask-image: url(../../assets/images/Vector.svg);
+    }
+    &:hover {
+      animation: rotating 4s linear infinite;
+    }
+    &:hover img {
+      animation: reverserotating 4s linear infinite;
+    }
+    @keyframes rotating {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes reverserotating {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
     }
   }
 }

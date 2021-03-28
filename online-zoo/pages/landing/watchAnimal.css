@@ -1,5 +1,15 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
 .hero {
   background-image: url(../../assets/images/landing-panda-1920.svg);
+  background-position: center bottom;
+  background-size: cover;
   width: 100%;
   min-height: 803px;
   display: -webkit-box;
@@ -16,6 +26,7 @@
 .content-part {
   width: 100%;
   max-width: 1480px;
+  min-height: 803px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,10 +38,134 @@
           justify-content: space-between;
 }
 
+.content-part .watch-online .first-h2 {
+  margin-top: 102px;
+  font-family: "Rubik", monospace;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 85.32px;
+  color: #f3f7f8;
+}
+
+.content-part .watch-online .second-h2 {
+  font-family: "Rubik", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75.84px;
+  color: #f3f7f8;
+}
+
+.content-part .watch-online p {
+  display: inline-block;
+  width: 450px;
+  margin-top: 29px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f3f7f8;
+}
+
+.content-part .watch-online .watch-now-btn {
+  width: 258px;
+  height: 52px;
+  margin-top: 86px;
+  background: #ffffff;
+  border: 0px solid #ffffff;
+  -webkit-box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+          box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.74px;
+  letter-spacing: -1px;
+  color: #0d444d;
+}
+
+.content-part .wrapper-big-panda {
+  position: relative;
+}
+
+.content-part .wrapper-big-panda .play-panda-video-btn {
+  background-image: url(../../assets/icons/play-btn.svg);
+  width: 120.21px;
+  height: 120.21px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 29px);
+  z-index: 5;
+}
+
+.content-part .video-panda-on-landing {
+  width: 803px;
+  height: 666px;
+  margin-top: 47px;
+  -webkit-clip-path: url(#hero-mask);
+          clip-path: url(#hero-mask);
+}
+
 .content-part .video-panda-on-landing img {
   width: 803px;
   height: 666px;
-  -webkit-mask-image: url(../../assets/images/Vector.svg);
-          mask-image: url(../../assets/images/Vector.svg);
+}
+
+.content-part .video-panda-on-landing:hover {
+  -webkit-animation: rotating 4s linear infinite;
+          animation: rotating 4s linear infinite;
+}
+
+.content-part .video-panda-on-landing:hover img {
+  -webkit-animation: reverserotating 4s linear infinite;
+          animation: reverserotating 4s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes reverserotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes reverserotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
 }
 /*# sourceMappingURL=watchAnimal.css.map */

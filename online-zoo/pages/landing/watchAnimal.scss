@@ -89,12 +89,17 @@ p {
     height: 666px;
     margin-top: 47px;
     clip-path: url(#hero-mask);
+    // mask-image: url(../../assets/images/mask-for-panda.svg);
+    // mask-repeat: no-repeat;
     img {
       width: 803px;
       height: 666px;
     }
     &:hover {
       animation: rotating 4s linear infinite;
+      path {
+        transform: scale(0.9, 0.9);
+      }
     }
     &:hover img {
       animation: reverserotating 4s linear infinite;

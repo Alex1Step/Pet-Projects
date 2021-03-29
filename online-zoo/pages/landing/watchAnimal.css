@@ -121,6 +121,11 @@ p {
           animation: rotating 4s linear infinite;
 }
 
+.content-part .video-panda-on-landing:hover path {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
 .content-part .video-panda-on-landing:hover img {
   -webkit-animation: reverserotating 4s linear infinite;
           animation: reverserotating 4s linear infinite;

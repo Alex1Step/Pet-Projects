@@ -108,6 +108,10 @@ header .content .wrapper-login {
           justify-content: space-between;
 }
 
+header .content .wrapper-login ul {
+  margin-right: -141px;
+}
+
 header .content .wrapper-login ul li {
   margin-left: 15px;
 }

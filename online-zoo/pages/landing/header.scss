@@ -67,8 +67,11 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      ul li {
-        margin-left: 15px;
+      ul {
+        margin-right: -141px;
+        li {
+          margin-left: 15px;
+        }
       }
       // search input style
       .search-form {

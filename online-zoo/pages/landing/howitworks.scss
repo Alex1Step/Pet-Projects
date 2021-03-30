@@ -3,23 +3,11 @@
 }
 
 .how-it-works {
-  position: relative;
   width: 100%;
   min-height: 328px;
   background-color: #f6f9fa;
-  h2 {
-    position: absolute;
-    top: -75px;
-    left: 218px;
-    font-family: "Rubik", monospace;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28.44px;
-    color: #0d444d;
-    text-transform: uppercase;
-  }
   .components-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +18,18 @@
     line-height: 20px;
     color: #0d444d;
     margin-left: 223px;
+    h2 {
+      position: absolute;
+      top: -75px;
+      left: -5px;
+      font-family: "Rubik", monospace;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28.44px;
+      color: #0d444d;
+      text-transform: uppercase;
+    }
     .figure-component {
       text-align: center;
       display: flex;

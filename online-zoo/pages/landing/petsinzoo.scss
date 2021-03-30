@@ -1,9 +1,11 @@
 .pets-in-zoo {
   background-color: #f6f9fa;
+  min-height: 1037px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  position: relative;
   .info-block {
     width: 100%;
     max-width: 1480px;
@@ -58,6 +60,7 @@
   .block-with-slider {
     max-width: 1480px;
     .slider-container {
+      position: relative;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 19px;
@@ -149,6 +152,37 @@
           }
         }
       }
+      .previous {
+        width: 15px;
+        height: 21px;
+        position: absolute;
+        top: 388px;
+        right: -82px;
+        background-image: url(../../assets/icons/prev-arrow.svg);
+        background-position: center center;
+        background-size: cover;
+      }
+      .next {
+        width: 15px;
+        height: 21px;
+        position: absolute;
+        top: 337px;
+        right: -84px;
+        background-image: url(../../assets/icons/next-arrow.svg);
+        background-position: center center;
+        background-size: cover;
+      }
     }
+  }
+  &::after {
+    position: absolute;
+    bottom: 112px;
+    right: 128px;
+    content: "";
+    display: block;
+    background-image: url("../../assets/icons/Penguin.png");
+    background-size: cover;
+    height: 65.69px;
+    width: 33px;
   }
 }

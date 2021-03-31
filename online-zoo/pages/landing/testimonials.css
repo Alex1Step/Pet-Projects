@@ -1,7 +1,7 @@
 .testimonials {
   width: 100%;
   min-height: 460px;
-  background-color: red;
+  background-color: #f6f9fa;
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
@@ -118,22 +118,54 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  background-color: #f6f9fa;
 }
 
 .testimonials .feedback-block .feedbackN .feedback-text {
   width: 480px;
   height: 190px;
-  background-color: royalblue;
+  padding-top: 28px;
+  padding-left: 45px;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
   -webkit-mask-image: url(../../assets/images/feedback-mask.svg);
           mask-image: url(../../assets/images/feedback-mask.svg);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
-  -webkit-mask-size: cover;
-          mask-size: cover;
+  -webkit-mask-position: -31px -29px;
+          mask-position: -31px -29px;
+  -webkit-mask-size: 113%;
+          mask-size: 113%;
+}
+
+.testimonials .feedback-block .feedbackN .feedback-text span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b3b3b3;
+}
+
+.testimonials .feedback-block .feedbackN .feedback-text p {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2d2d2d;
+  margin-top: 6px;
+  max-width: 415px;
 }
 
 .testimonials .feedback-block .feedbackN .feedback-person1 {
   position: relative;
+}
+
+.testimonials .feedback-block .feedbackN .feedback-person1 img {
+  margin-left: 20px;
 }
 
 .testimonials .feedback-block .feedbackN .feedback-person1::after {
@@ -141,10 +173,21 @@
   top: 25px;
   left: 100px;
   content: "Adam, Spain";
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
 }
 
 .testimonials .feedback-block .feedbackN .feedback-person2 {
   position: relative;
+}
+
+.testimonials .feedback-block .feedbackN .feedback-person2 img {
+  margin-left: 20px;
 }
 
 .testimonials .feedback-block .feedbackN .feedback-person2::after {
@@ -152,10 +195,21 @@
   top: 25px;
   left: 100px;
   content: "Chris, Australia";
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
 }
 
 .testimonials .feedback-block .feedbackN .feedback-person3 {
   position: relative;
+}
+
+.testimonials .feedback-block .feedbackN .feedback-person3 img {
+  margin-left: 20px;
 }
 
 .testimonials .feedback-block .feedbackN .feedback-person3::after {
@@ -163,5 +217,12 @@
   top: 25px;
   left: 100px;
   content: "Amely, USA";
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
 }
 /*# sourceMappingURL=testimonials.css.map */

@@ -1,0 +1,171 @@
+.look-at {
+  width: 100%;
+  min-height: 411px;
+  background-color: #f6f9fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.look-at .content-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1480px;
+  min-height: 410px;
+  padding-top: 100px;
+}
+
+.look-at .content-wrapper h2 {
+  font-family: "Rubik", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #0d444d;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.look-at .content-wrapper .slider-look {
+  margin-top: 66px;
+  width: calc(100% - 173px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.look-at .content-wrapper .slider-look a {
+  text-decoration: none;
+}
+
+.look-at .content-wrapper .slider-look a:hover .slideN {
+  -webkit-animation: rotating 0.5s linear;
+          animation: rotating 0.5s linear;
+}
+
+.look-at .content-wrapper .slider-look a:hover img {
+  -webkit-animation: reverserotating 0.5s linear;
+          animation: reverserotating 0.5s linear;
+}
+
+.look-at .content-wrapper .slider-look a:not(:hover) .slideN {
+  -webkit-animation: rotating-back 0.5s linear;
+          animation: rotating-back 0.5s linear;
+}
+
+.look-at .content-wrapper .slider-look a:not(:hover) img {
+  -webkit-animation: reverserotating-back 0.5s linear;
+          animation: reverserotating-back 0.5s linear;
+}
+
+@-webkit-keyframes rotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes reverserotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes reverserotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.look-at .content-wrapper .slider-look span {
+  display: block;
+  margin-top: 8px;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2d2d2d;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.look-at .content-wrapper .slider-look .slideN {
+  width: 76px;
+  height: 74px;
+  -webkit-mask-image: url(../../assets/images/small-mask-for-animal.svg);
+          mask-image: url(../../assets/images/small-mask-for-animal.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  position: relative;
+}
+
+.look-at .content-wrapper .slider-look .slideN img {
+  width: 76px;
+  height: 74px;
+}
+
+.look-at .content-wrapper .slider-look .previous {
+  width: 15px;
+  height: 21px;
+  position: absolute;
+  top: 65px;
+  right: -105px;
+  background-image: url(../../assets/icons/prev-arrow.svg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.look-at .content-wrapper .slider-look .next {
+  width: 15px;
+  height: 21px;
+  position: absolute;
+  top: 14px;
+  right: -107px;
+  background-image: url(../../assets/icons/next-arrow.svg);
+  background-position: center center;
+  background-size: cover;
+}
+/*# sourceMappingURL=lookat.css.map */

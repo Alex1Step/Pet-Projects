@@ -15,6 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #2a8086;
+  box-shadow: 0px -10px 9px -10px rgba(34, 60, 80, 0.6) inset;
 }
 
 // HEADER
@@ -68,7 +69,6 @@ header {
       align-items: center;
       justify-content: space-between;
       ul {
-        margin-right: -141px;
         li {
           margin-left: 15px;
         }

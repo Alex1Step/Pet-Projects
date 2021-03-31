@@ -1,8 +1,7 @@
 .testimonials {
   width: 100%;
   min-height: 460px;
-  // background-color: #f6f9fa;
-  background-color: red;
+  background-color: #f6f9fa;
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -77,39 +76,94 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+      background-color: #f6f9fa;
       .feedback-text {
         width: 480px;
         height: 190px;
-        background-color: royalblue;
+        padding-top: 28px;
+        padding-left: 45px;
+        box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+        background-color: #ffffff;
         mask-image: url(../../assets/images/feedback-mask.svg);
         mask-repeat: no-repeat;
-        mask-size: cover;
+        mask-position: -31px -29px;
+        mask-size: 113%;
+        span {
+          // display: block;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          color: #b3b3b3;
+        }
+        p {
+          display: block;
+          font-family: "Roboto", sans-serif;
+          font-style: italic;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          color: #2d2d2d;
+          margin-top: 6px;
+          max-width: 415px;
+        }
       }
       .feedback-person1 {
         position: relative;
+        img {
+          margin-left: 20px;
+        }
         &::after {
           position: absolute;
           top: 25px;
           left: 100px;
           content: "Adam, Spain";
+          white-space: nowrap;
+          font-family: "Roboto", sans-serif;
+          font-style: italic;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
         }
       }
       .feedback-person2 {
         position: relative;
+        img {
+          margin-left: 20px;
+        }
         &::after {
           position: absolute;
           top: 25px;
           left: 100px;
           content: "Chris, Australia";
+          white-space: nowrap;
+          font-family: "Roboto", sans-serif;
+          font-style: italic;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
         }
       }
       .feedback-person3 {
         position: relative;
+        img {
+          margin-left: 20px;
+        }
         &::after {
           position: absolute;
           top: 25px;
           left: 100px;
           content: "Amely, USA";
+          white-space: nowrap;
+          font-family: "Roboto", sans-serif;
+          font-style: italic;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
         }
       }
     }

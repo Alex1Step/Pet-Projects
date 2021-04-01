@@ -25,38 +25,54 @@
       text-transform: uppercase;
       margin-left: -3px;
     }
-    .button-leave-feedback {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 255px;
-      height: 52px;
-      border: 1.5px solid #19707d;
-      box-sizing: border-box;
-      border-radius: 100px;
-      background-color: #f6f9fa;
-      font-family: "Roboto Mono", monospace;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 23.74px;
-      color: #19707d;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      a {
-        text-decoration: none;
+    a {
+      text-decoration: none;
+      .button-leave-feedback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 255px;
+        height: 52px;
+        border: 1.5px solid #19707d;
+        box-sizing: border-box;
+        border-radius: 100px;
+        background-color: #f6f9fa;
+        font-family: "Roboto Mono", monospace;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23.74px;
         color: #19707d;
-        position: relative;
-        left: 20px;
-        &::before {
-          content: "";
-          background-image: url(../../assets/icons/feedback-icon.png);
-          background-size: cover;
-          width: 24px;
-          height: 24px;
-          position: absolute;
-          top: -1px;
-          left: -38px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        span {
+          color: #19707d;
+          position: relative;
+          left: 20px;
+          &::before {
+            content: "";
+            background-image: url(../../assets/icons/feedback-icon.png);
+            background-size: cover;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: -1px;
+            left: -38px;
+          }
+        }
+        transition: all 0.3s;
+        &:hover {
+          cursor: pointer;
+          border: 1.5px solid #f6f9fa;
+          background-color: #2a8086;
+          box-shadow: 0px 0px 8px 6px rgba(34, 60, 80, 0.2);
+          span {
+            color: #f6f9fa;
+            &::before {
+              background-color: yellow;
+              border-radius: 5px;
+            }
+          }
         }
       }
     }

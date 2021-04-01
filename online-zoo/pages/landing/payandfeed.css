@@ -53,6 +53,10 @@
           justify-content: space-between;
 }
 
+.pay-and-feed .content-conteiner .info-block-2 a {
+  text-decoration: none;
+}
+
 .pay-and-feed .content-conteiner .info-block-2 h2 {
   font-family: "Rubik", monospace;
   font-style: normal;
@@ -93,11 +97,25 @@
   text-transform: uppercase;
   letter-spacing: -0.7px;
   margin-top: 71px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.pay-and-feed .content-conteiner .info-block-2 .button-donate a {
+.pay-and-feed .content-conteiner .info-block-2 .button-donate span {
   text-decoration: none;
   color: #19707d;
+}
+
+.pay-and-feed .content-conteiner .info-block-2 .button-donate:hover {
+  background: #2a8086;
+  border: 1.5px solid #c5e1e6;
+  cursor: pointer;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.pay-and-feed .content-conteiner .info-block-2 .button-donate:hover span {
+  color: #cccccc;
 }
 
 .pay-and-feed .content-conteiner .components-container-2 {

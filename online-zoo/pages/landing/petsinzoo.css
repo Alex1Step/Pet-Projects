@@ -43,7 +43,11 @@
   margin-left: -3px;
 }
 
-.pets-in-zoo .info-block .button-chose-pets {
+.pets-in-zoo .info-block a {
+  text-decoration: none;
+}
+
+.pets-in-zoo .info-block a .button-chose-pets {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,16 +73,17 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 71px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.pets-in-zoo .info-block .button-chose-pets a {
-  text-decoration: none;
+.pets-in-zoo .info-block a .button-chose-pets span {
   color: #19707d;
   position: relative;
   left: 20px;
 }
 
-.pets-in-zoo .info-block .button-chose-pets a::before {
+.pets-in-zoo .info-block a .button-chose-pets span::before {
   content: "\2661";
   font-size: 32px;
   position: absolute;
@@ -86,8 +91,33 @@
   left: -38px;
 }
 
+.pets-in-zoo .info-block a .button-chose-pets:hover {
+  background-color: #19707d;
+}
+
+.pets-in-zoo .info-block a .button-chose-pets:hover span {
+  color: #f6f9fa;
+}
+
+.pets-in-zoo .info-block a .button-chose-pets:hover span::before {
+  color: red;
+}
+
 .pets-in-zoo .block-with-slider {
   max-width: 1480px;
+  position: relative;
+}
+
+.pets-in-zoo .block-with-slider::after {
+  position: absolute;
+  bottom: 12px;
+  right: -93px;
+  content: "";
+  display: block;
+  background-image: url("../../assets/icons/Penguin.png");
+  background-size: cover;
+  height: 65.69px;
+  width: 33px;
 }
 
 .pets-in-zoo .block-with-slider .slider-container {
@@ -108,6 +138,122 @@
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
+}
+
+.pets-in-zoo .block-with-slider .slider-container .slide a {
+  text-decoration: none;
+}
+
+.pets-in-zoo .block-with-slider .slider-container .slide:hover .animal-with-mask {
+  -webkit-animation: rotating 0.3s linear;
+          animation: rotating 0.3s linear;
+  -webkit-mask-size: 94%;
+          mask-size: 94%;
+}
+
+.pets-in-zoo .block-with-slider .slider-container .slide:hover .animal-with-mask img {
+  -webkit-animation: reverserotating 0.3s linear;
+          animation: reverserotating 0.3s linear;
+}
+
+.pets-in-zoo .block-with-slider .slider-container .slide:not(:hover) .animal-with-mask {
+  -webkit-animation: rotating-back 0.3s linear;
+          animation: rotating-back 0.3s linear;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+}
+
+.pets-in-zoo .block-with-slider .slider-container .slide:not(:hover) .animal-with-mask img {
+  -webkit-animation: reverserotating-back 0.3s linear;
+          animation: reverserotating-back 0.3s linear;
+}
+
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes reverserotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes reverserotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes rotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes reverserotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes reverserotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .pets-in-zoo .block-with-slider .slider-container .slide .info-of-animal {
@@ -175,74 +321,6 @@
   height: 221px;
 }
 
-.pets-in-zoo .block-with-slider .slider-container .slide .animal-photo .animal-with-mask:hover {
-  -webkit-animation: rotating 0.5s linear;
-          animation: rotating 0.5s linear;
-  -webkit-mask-size: 94%;
-          mask-size: 94%;
-}
-
-.pets-in-zoo .block-with-slider .slider-container .slide .animal-photo .animal-with-mask:hover img {
-  -webkit-animation: reverserotating 0.5s linear;
-          animation: reverserotating 0.5s linear;
-}
-
-.pets-in-zoo .block-with-slider .slider-container .slide .animal-photo .animal-with-mask:not(:hover) {
-  -webkit-animation: rotating-back 0.5s linear;
-          animation: rotating-back 0.5s linear;
-  -webkit-mask-size: 100%;
-          mask-size: 100%;
-}
-
-.pets-in-zoo .block-with-slider .slider-container .slide .animal-photo .animal-with-mask:not(:hover) img {
-  -webkit-animation: reverserotating-back 0.5s linear;
-          animation: reverserotating-back 0.5s linear;
-}
-
-@-webkit-keyframes rotating-back {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
-@keyframes rotating-back {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
-@-webkit-keyframes reverserotating-back {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes reverserotating-back {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 .pets-in-zoo .block-with-slider .slider-container .previous {
   width: 15px;
   height: 21px;
@@ -252,6 +330,12 @@
   background-image: url(../../assets/icons/prev-arrow.svg);
   background-position: center center;
   background-size: cover;
+}
+
+.pets-in-zoo .block-with-slider .slider-container .previous:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  cursor: pointer;
 }
 
 .pets-in-zoo .block-with-slider .slider-container .next {
@@ -265,15 +349,9 @@
   background-size: cover;
 }
 
-.pets-in-zoo::after {
-  position: absolute;
-  bottom: 112px;
-  right: 128px;
-  content: "";
-  display: block;
-  background-image: url("../../assets/icons/Penguin.png");
-  background-size: cover;
-  height: 65.69px;
-  width: 33px;
+.pets-in-zoo .block-with-slider .slider-container .next:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  cursor: pointer;
 }
 /*# sourceMappingURL=petsinzoo.css.map */

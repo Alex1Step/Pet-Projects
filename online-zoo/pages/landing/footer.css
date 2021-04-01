@@ -10,7 +10,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #2a8086;
+  background: #196469;
 }
 
 footer {
@@ -82,6 +82,18 @@ footer .content .wrapper-nav nav ul li {
   white-space: nowrap;
   margin-left: 2.75vw;
   list-style-type: none;
+  /* for animation */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c5e1e5), to(#c5e1e5));
+  background-image: linear-gradient(#c5e1e5, #c5e1e5);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+footer .content .wrapper-nav nav ul li:hover {
+  background-size: 100% 2px;
 }
 
 footer .content .wrapper-nav nav ul li a {

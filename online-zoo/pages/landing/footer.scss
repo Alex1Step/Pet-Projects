@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2a8086;
+  background: #196469;
 }
 
 footer {
@@ -43,6 +43,15 @@ footer {
             white-space: nowrap;
             margin-left: 2.75vw;
             list-style-type: none;
+            /* for animation */
+            background-image: linear-gradient(#c5e1e5, #c5e1e5);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size 0.3s;
+            &:hover {
+              background-size: 100% 2px;
+            }
             a {
               text-transform: uppercase;
               text-decoration: none;

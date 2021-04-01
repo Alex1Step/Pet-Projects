@@ -23,42 +23,66 @@
       margin-top: 70px;
       margin-left: -3px;
     }
-    .button-chose-pets {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 331px;
-      height: 52px;
-      border: 1.5px solid #19707d;
-      box-sizing: border-box;
-      border-radius: 100px;
-      background-color: #f6f9fa;
-      font-family: "Roboto Mono", monospace;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 23.74px;
-      color: #19707d;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-top: 71px;
-      a {
-        text-decoration: none;
+    a {
+      text-decoration: none;
+      .button-chose-pets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 331px;
+        height: 52px;
+        border: 1.5px solid #19707d;
+        box-sizing: border-box;
+        border-radius: 100px;
+        background-color: #f6f9fa;
+        font-family: "Roboto Mono", monospace;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23.74px;
         color: #19707d;
-        position: relative;
-        left: 20px;
-        &::before {
-          content: "\2661";
-          font-size: 32px;
-          position: absolute;
-          top: -1px;
-          left: -38px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 71px;
+        span {
+          color: #19707d;
+          position: relative;
+          left: 20px;
+          &::before {
+            content: "\2661";
+            font-size: 32px;
+            position: absolute;
+            top: -1px;
+            left: -38px;
+          }
+        }
+        transition: all 0.3s;
+        &:hover {
+          background-color: #19707d;
+          span {
+            color: #f6f9fa;
+            &::before {
+              color: red;
+            }
+          }
         }
       }
     }
   }
   .block-with-slider {
     max-width: 1480px;
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: 12px;
+      right: -93px;
+      content: "";
+      display: block;
+      background-image: url("../../assets/icons/Penguin.png");
+      background-size: cover;
+      height: 65.69px;
+      width: 33px;
+    }
     .slider-container {
       position: relative;
       display: grid;
@@ -72,6 +96,55 @@
         background: #ffffff;
         box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
         border-radius: 10px;
+        a {
+          text-decoration: none;
+        }
+        &:hover .animal-with-mask {
+          animation: rotating 0.3s linear;
+          mask-size: 94%;
+        }
+        &:hover .animal-with-mask img {
+          animation: reverserotating 0.3s linear;
+        }
+        &:not(:hover) .animal-with-mask {
+          animation: rotating-back 0.3s linear;
+          mask-size: 100%;
+        }
+        &:not(:hover) .animal-with-mask img {
+          animation: reverserotating-back 0.3s linear;
+        }
+        @keyframes rotating {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes reverserotating {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(-360deg);
+          }
+        }
+        @keyframes rotating-back {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(-360deg);
+          }
+        }
+        @keyframes reverserotating-back {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
         .info-of-animal {
           position: relative;
           span {
@@ -119,36 +192,6 @@
               width: 229px;
               height: 221px;
             }
-            &:hover {
-              animation: rotating 0.5s linear;
-              mask-size: 94%;
-            }
-            &:hover img {
-              animation: reverserotating 0.5s linear;
-            }
-            &:not(:hover) {
-              animation: rotating-back 0.5s linear;
-              mask-size: 100%;
-            }
-            &:not(:hover) img {
-              animation: reverserotating-back 0.5s linear;
-            }
-            @keyframes rotating-back {
-              0% {
-                transform: rotate(0deg);
-              }
-              100% {
-                transform: rotate(-360deg);
-              }
-            }
-            @keyframes reverserotating-back {
-              0% {
-                transform: rotate(0deg);
-              }
-              100% {
-                transform: rotate(360deg);
-              }
-            }
           }
         }
       }
@@ -161,6 +204,10 @@
         background-image: url(../../assets/icons/prev-arrow.svg);
         background-position: center center;
         background-size: cover;
+        &:hover {
+          transform: scale(1.2, 1.2);
+          cursor: pointer;
+        }
       }
       .next {
         width: 15px;
@@ -171,18 +218,11 @@
         background-image: url(../../assets/icons/next-arrow.svg);
         background-position: center center;
         background-size: cover;
+        &:hover {
+          transform: scale(1.2, 1.2);
+          cursor: pointer;
+        }
       }
     }
-  }
-  &::after {
-    position: absolute;
-    bottom: 112px;
-    right: 128px;
-    content: "";
-    display: block;
-    background-image: url("../../assets/icons/Penguin.png");
-    background-size: cover;
-    height: 65.69px;
-    width: 33px;
   }
 }

@@ -32,6 +32,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      a {
+        text-decoration: none;
+      }
       h2 {
         font-family: "Rubik", monospace;
         font-style: normal;
@@ -63,9 +66,19 @@
         text-transform: uppercase;
         letter-spacing: -0.7px;
         margin-top: 71px;
-        a {
+        span {
           text-decoration: none;
           color: #19707d;
+        }
+        transition: all 0.3s;
+        &:hover {
+          background: #2a8086;
+          border: 1.5px solid #c5e1e6;
+          cursor: pointer;
+          filter: none;
+          span {
+            color: #cccccc;
+          }
         }
       }
     }

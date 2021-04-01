@@ -70,6 +70,14 @@ p {
       line-height: 23.74px;
       letter-spacing: -1px;
       color: #0d444d;
+      transition: all 0.4s;
+      &:hover {
+        color: #ffffff;
+        border-radius: 100px;
+        background: #0d444d;
+        border: 0px solid #ffffff;
+        cursor: pointer;
+      }
     }
   }
   .wrapper-big-panda {
@@ -82,43 +90,75 @@ p {
       top: 50%;
       left: calc(50% - 29px);
       z-index: 5;
+      transition: all 0.6s;
+      &:hover {
+        background-image: url(../../assets/icons/play-btn-hover.svg);
+      }
     }
-  }
-  .video-panda-on-landing {
-    width: 803px;
-    height: 666px;
-    margin-top: 47px;
-    clip-path: url(#hero-mask);
-    // mask-image: url(../../assets/images/mask-for-panda.svg);
-    // mask-repeat: no-repeat;
-    img {
+    .video-panda-on-landing {
       width: 803px;
       height: 666px;
-    }
-    &:hover {
-      animation: rotating 4s linear infinite;
-      path {
-        transform: scale(0.9, 0.9);
+      margin-top: 47px;
+      // clip-path: url(#hero-mask);
+      mask-image: url(../../assets/images/mask-for-panda.svg);
+      mask-repeat: no-repeat;
+      img {
+        width: 803px;
+        height: 666px;
+        transition: all 0.6s;
+        &:hover + .play-panda-video-btn {
+          background-image: url(../../assets/icons/play-btn-hover.svg);
+        }
+        &:hover {
+          animation: pulse 4s infinite;
+        }
+        @keyframes pulse {
+          0% {
+            filter: brightness(100%);
+          }
+          20% {
+            filter: brightness(110%);
+          }
+          40% {
+            filter: brightness(120%);
+            transform: scale(1.05, 1.05);
+          }
+          60% {
+            filter: brightness(130%);
+          }
+          80% {
+            filter: brightness(120%);
+          }
+          100% {
+            filter: brightness(100%);
+          }
+        }
       }
-    }
-    &:hover img {
-      animation: reverserotating 4s linear infinite;
-    }
-    @keyframes rotating {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    @keyframes reverserotating {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(-360deg);
-      }
+      // &:hover {
+      //   animation: rotating 4s linear infinite;
+      //   path {
+      //     transform: scale(0.9, 0.9);
+      //   }
+      // }
+      // &:hover img {
+      //   animation: reverserotating 4s linear infinite;
+      // }
+      // @keyframes rotating {
+      //   0% {
+      //     transform: rotate(0deg);
+      //   }
+      //   100% {
+      //     transform: rotate(360deg);
+      //   }
+      // }
+      // @keyframes reverserotating {
+      //   0% {
+      //     transform: rotate(0deg);
+      //   }
+      //   100% {
+      //     transform: rotate(-360deg);
+      //   }
+      // }
     }
   }
 }

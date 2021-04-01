@@ -45,7 +45,11 @@
   margin-left: -3px;
 }
 
-.testimonials .info-block-3 .button-leave-feedback {
+.testimonials .info-block-3 a {
+  text-decoration: none;
+}
+
+.testimonials .info-block-3 a .button-leave-feedback {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,16 +74,17 @@
   color: #19707d;
   text-transform: uppercase;
   letter-spacing: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.testimonials .info-block-3 .button-leave-feedback a {
-  text-decoration: none;
+.testimonials .info-block-3 a .button-leave-feedback span {
   color: #19707d;
   position: relative;
   left: 20px;
 }
 
-.testimonials .info-block-3 .button-leave-feedback a::before {
+.testimonials .info-block-3 a .button-leave-feedback span::before {
   content: "";
   background-image: url(../../assets/icons/feedback-icon.png);
   background-size: cover;
@@ -88,6 +93,23 @@
   position: absolute;
   top: -1px;
   left: -38px;
+}
+
+.testimonials .info-block-3 a .button-leave-feedback:hover {
+  cursor: pointer;
+  border: 1.5px solid #f6f9fa;
+  background-color: #2a8086;
+  -webkit-box-shadow: 0px 0px 8px 6px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 8px 6px rgba(34, 60, 80, 0.2);
+}
+
+.testimonials .info-block-3 a .button-leave-feedback:hover span {
+  color: #f6f9fa;
+}
+
+.testimonials .info-block-3 a .button-leave-feedback:hover span::before {
+  background-color: yellow;
+  border-radius: 5px;
 }
 
 .testimonials .feedback-block {

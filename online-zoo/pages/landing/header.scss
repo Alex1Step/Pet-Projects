@@ -45,7 +45,6 @@ header {
       line-height: 23.74px;
       color: #c5e1e5;
       nav {
-        // margin-left: 12px;
         ul {
           display: flex;
           align-items: center;
@@ -54,6 +53,20 @@ header {
           li {
             white-space: nowrap;
             margin-left: 2.75vw;
+            /* for animation */
+            background-image: linear-gradient(#c5e1e5, #c5e1e5);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size 0.3s;
+            &:hover {
+              background-size: 100% 2px;
+            }
+
+            &:first-child {
+              border-bottom: 1px #c5e1e5 solid;
+              pointer-events: none;
+            }
           }
         }
       }
@@ -84,6 +97,7 @@ header {
         height: 32px;
         top: 0;
         right: 3px;
+        cursor: pointer;
       }
       .search {
         // -webkit-appearance: textfield;
@@ -135,6 +149,14 @@ header {
         border: 0px solid #2a8086;
         outline: none;
         text-transform: uppercase;
+        transition: all 0.3s;
+        &:hover {
+          border: 1px solid #c5e1e6;
+          border-radius: 100px;
+          background-color: #c5e1e6;
+          color: #2a8086;
+          cursor: pointer;
+        }
       }
       .signup-btn {
         width: 97px;
@@ -144,6 +166,12 @@ header {
         box-sizing: border-box;
         border-radius: 100px;
         text-transform: uppercase;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #c5e1e6;
+          color: #2a8086;
+          cursor: pointer;
+        }
       }
     }
     ul {

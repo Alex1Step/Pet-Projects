@@ -6,11 +6,15 @@
   width: 100%;
   min-height: 328px;
   background-color: #f6f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .components-container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1480px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;

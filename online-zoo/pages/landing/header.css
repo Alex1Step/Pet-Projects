@@ -90,6 +90,23 @@ header .content .wrapper-nav nav ul {
 header .content .wrapper-nav nav ul li {
   white-space: nowrap;
   margin-left: 2.75vw;
+  /* for animation */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c5e1e5), to(#c5e1e5));
+  background-image: linear-gradient(#c5e1e5, #c5e1e5);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+header .content .wrapper-nav nav ul li:hover {
+  background-size: 100% 2px;
+}
+
+header .content .wrapper-nav nav ul li:first-child {
+  border-bottom: 1px #c5e1e5 solid;
+  pointer-events: none;
 }
 
 header .content .wrapper-login {
@@ -125,6 +142,7 @@ header .content .wrapper-login .search-icon {
   height: 32px;
   top: 0;
   right: 3px;
+  cursor: pointer;
 }
 
 header .content .wrapper-login .search {
@@ -184,6 +202,16 @@ header .content .wrapper-login .login-btn {
   border: 0px solid #2a8086;
   outline: none;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .content .wrapper-login .login-btn:hover {
+  border: 1px solid #c5e1e6;
+  border-radius: 100px;
+  background-color: #c5e1e6;
+  color: #2a8086;
+  cursor: pointer;
 }
 
 header .content .wrapper-login .signup-btn {
@@ -195,6 +223,14 @@ header .content .wrapper-login .signup-btn {
           box-sizing: border-box;
   border-radius: 100px;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .content .wrapper-login .signup-btn:hover {
+  background-color: #c5e1e6;
+  color: #2a8086;
+  cursor: pointer;
 }
 
 header .content ul {

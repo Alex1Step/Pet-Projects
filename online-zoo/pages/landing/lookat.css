@@ -52,23 +52,23 @@
 }
 
 .look-at .content-wrapper .slider-look a:hover .slideN {
-  -webkit-animation: rotating 0.5s linear;
-          animation: rotating 0.5s linear;
+  -webkit-animation: rotating 0.3s linear;
+          animation: rotating 0.3s linear;
 }
 
 .look-at .content-wrapper .slider-look a:hover img {
-  -webkit-animation: reverserotating 0.5s linear;
-          animation: reverserotating 0.5s linear;
+  -webkit-animation: reverserotating 0.3s linear;
+          animation: reverserotating 0.3s linear;
 }
 
 .look-at .content-wrapper .slider-look a:not(:hover) .slideN {
-  -webkit-animation: rotating-back 0.5s linear;
-          animation: rotating-back 0.5s linear;
+  -webkit-animation: rotating-back 0.3s linear;
+          animation: rotating-back 0.3s linear;
 }
 
 .look-at .content-wrapper .slider-look a:not(:hover) img {
-  -webkit-animation: reverserotating-back 0.5s linear;
-          animation: reverserotating-back 0.5s linear;
+  -webkit-animation: reverserotating-back 0.3s linear;
+          animation: reverserotating-back 0.3s linear;
 }
 
 @-webkit-keyframes rotating-back {
@@ -156,6 +156,14 @@
   background-image: url(../../assets/icons/prev-arrow.svg);
   background-position: center center;
   background-size: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.look-at .content-wrapper .slider-look .previous:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  cursor: pointer;
 }
 
 .look-at .content-wrapper .slider-look .next {
@@ -167,5 +175,13 @@
   background-image: url(../../assets/icons/next-arrow.svg);
   background-position: center center;
   background-size: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.look-at .content-wrapper .slider-look .next:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  cursor: pointer;
 }
 /*# sourceMappingURL=lookat.css.map */

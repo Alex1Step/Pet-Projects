@@ -87,6 +87,16 @@ p {
   line-height: 23.74px;
   letter-spacing: -1px;
   color: #0d444d;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.content-part .watch-online .watch-now-btn:hover {
+  color: #ffffff;
+  border-radius: 100px;
+  background: #0d444d;
+  border: 0px solid #ffffff;
+  cursor: pointer;
 }
 
 .content-part .wrapper-big-panda {
@@ -101,77 +111,95 @@ p {
   top: 50%;
   left: calc(50% - 29px);
   z-index: 5;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
-.content-part .video-panda-on-landing {
+.content-part .wrapper-big-panda .play-panda-video-btn:hover {
+  background-image: url(../../assets/icons/play-btn-hover.svg);
+}
+
+.content-part .wrapper-big-panda .video-panda-on-landing {
   width: 803px;
   height: 666px;
   margin-top: 47px;
-  -webkit-clip-path: url(#hero-mask);
-          clip-path: url(#hero-mask);
+  -webkit-mask-image: url(../../assets/images/mask-for-panda.svg);
+          mask-image: url(../../assets/images/mask-for-panda.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
 }
 
-.content-part .video-panda-on-landing img {
+.content-part .wrapper-big-panda .video-panda-on-landing img {
   width: 803px;
   height: 666px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
-.content-part .video-panda-on-landing:hover {
-  -webkit-animation: rotating 4s linear infinite;
-          animation: rotating 4s linear infinite;
+.content-part .wrapper-big-panda .video-panda-on-landing img:hover + .play-panda-video-btn {
+  background-image: url(../../assets/icons/play-btn-hover.svg);
 }
 
-.content-part .video-panda-on-landing:hover path {
-  -webkit-transform: scale(0.9, 0.9);
-          transform: scale(0.9, 0.9);
+.content-part .wrapper-big-panda .video-panda-on-landing img:hover {
+  -webkit-animation: pulse 4s infinite;
+          animation: pulse 4s infinite;
 }
 
-.content-part .video-panda-on-landing:hover img {
-  -webkit-animation: reverserotating 4s linear infinite;
-          animation: reverserotating 4s linear infinite;
-}
-
-@-webkit-keyframes rotating {
+@-webkit-keyframes pulse {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+  20% {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+  }
+  40% {
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+  60% {
+    -webkit-filter: brightness(130%);
+            filter: brightness(130%);
+  }
+  80% {
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
 }
 
-@keyframes rotating {
+@keyframes pulse {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+  20% {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+  }
+  40% {
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+  }
+  60% {
+    -webkit-filter: brightness(130%);
+            filter: brightness(130%);
+  }
+  80% {
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes reverserotating {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
-@keyframes reverserotating {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
 }
 /*# sourceMappingURL=watchAnimal.css.map */

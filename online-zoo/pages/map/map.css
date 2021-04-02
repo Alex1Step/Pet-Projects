@@ -1,0 +1,318 @@
+.map {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2a8086;
+  -webkit-box-shadow: 0px -10px 9px -10px rgba(34, 60, 80, 0.6) inset;
+          box-shadow: 0px -10px 9px -10px rgba(34, 60, 80, 0.6) inset;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1480px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.map-container .wrapper-h2 {
+  width: 100%;
+}
+
+.map-container .wrapper-h2 h2 {
+  margin-top: 26px;
+  font-family: "Rubik", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28.44px;
+  color: #c5e1e5;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+}
+
+.map-container .big-map {
+  margin-top: 34px;
+  margin-left: -16px;
+  margin-bottom: 18px;
+}
+
+.map-container .plus {
+  position: absolute;
+  width: 32.52px;
+  height: 32.52px;
+  background-image: url(../../assets/icons/plus.svg);
+  bottom: 23px;
+  right: 90px;
+  -webkit-transition: scale 0.3s;
+  transition: scale 0.3s;
+}
+
+.map-container .plus:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.map-container .minus {
+  position: absolute;
+  width: 32.52px;
+  height: 32.52px;
+  background-image: url(../../assets/icons/minus.svg);
+  bottom: 23px;
+  right: 41px;
+  -webkit-transition: scale 0.3s;
+  transition: scale 0.3s;
+}
+
+.map-container .minus:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.map-container [title="eagle"] {
+  top: 469px;
+  left: 174px;
+}
+
+.map-container [title="aligator"] {
+  top: 541px;
+  left: 330px;
+}
+
+.map-container [title="gorilla"] {
+  top: 640px;
+  left: 692px;
+}
+
+.map-container [title="panda"] {
+  top: 505px;
+  left: 1037px;
+}
+
+.map-container .animal-icon {
+  position: absolute;
+  text-decoration: none;
+}
+
+.map-container .animal-icon .tooltip {
+  margin: 0 auto;
+  position: absolute;
+  width: 410px;
+  height: 107px;
+  top: -120px;
+  left: -154px;
+  background-color: #ffffff;
+  display: none;
+  pointer-events: none;
+  cursor: none;
+  border: 1px #0d444d solid;
+  border-radius: 10px;
+  padding-top: 12px;
+}
+
+.map-container .animal-icon .tooltip p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0d444d;
+  display: block;
+  margin: 0;
+}
+
+.map-container .animal-icon .tooltip::before, .map-container .animal-icon .tooltip::after {
+  content: "";
+  position: absolute;
+  left: 186px;
+  bottom: -30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #0d444d;
+}
+
+.map-container .animal-icon .tooltip::after {
+  border-top: 15px solid #ffffff;
+  bottom: -29px;
+}
+
+.map-container .animal-icon:hover .tooltip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.map-container .animal-icon .outer-pic {
+  width: 100px;
+  height: 93px;
+  position: relative;
+  background-color: #b9d5d9;
+  -webkit-mask-image: url(../../assets/images/map-outer-mask.svg);
+          mask-image: url(../../assets/images/map-outer-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: cover;
+          mask-size: cover;
+}
+
+.map-container .animal-icon .inner-pic {
+  width: 73px;
+  height: 70.47px;
+  position: absolute;
+  top: 9px;
+  left: 13px;
+  -webkit-mask-image: url(../../assets/images/map-inner-mask.svg);
+          mask-image: url(../../assets/images/map-inner-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: cover;
+          mask-size: cover;
+}
+
+.map-container .animal-icon .inner-pic .animal-pic {
+  width: 73px;
+  height: 70.47px;
+}
+
+.map-container .animal-icon:hover .outer-pic {
+  -webkit-animation: rotating 0.3s linear;
+          animation: rotating 0.3s linear;
+}
+
+.map-container .animal-icon:hover img {
+  -webkit-animation: reverserotating 0.3s linear;
+          animation: reverserotating 0.3s linear;
+}
+
+.map-container .animal-icon:not(:hover) .outer-pic {
+  -webkit-animation: rotating-back 0.3s linear;
+          animation: rotating-back 0.3s linear;
+}
+
+.map-container .animal-icon:not(:hover) img {
+  -webkit-animation: reverserotating-back 0.3s linear;
+          animation: reverserotating-back 0.3s linear;
+}
+
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes reverserotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes reverserotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes rotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes reverserotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes reverserotating-back {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=map.css.map */

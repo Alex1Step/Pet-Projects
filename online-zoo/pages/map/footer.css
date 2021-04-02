@@ -102,7 +102,7 @@ footer .content .wrapper-nav nav ul li a {
   color: #c5e1e5;
 }
 
-footer .content .wrapper-nav nav ul li:first-child {
+footer .content .wrapper-nav nav ul li:nth-child(2) {
   border-bottom: 1px #c5e1e5 solid;
   pointer-events: none;
 }

@@ -463,13 +463,94 @@ main .main-block .more-info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 78px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #0d444d;
 }
 
-main .main-block .more-info .information li {
-  list-style-type: none;
+main .main-block .more-info .information {
+  margin-left: 48px;
 }
 
-main .main-block .more-info .interesting-facts li {
+main .main-block .more-info .information h2 {
+  font-family: "Rubik", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.44px;
+  color: #0d444d;
+  text-transform: uppercase;
+  letter-spacing: -0.3px;
+}
+
+main .main-block .more-info .information ul {
+  padding-left: 0px;
+  margin-top: 23px;
+}
+
+main .main-block .more-info .information ul li {
   list-style-type: none;
+  margin-bottom: 35px;
+}
+
+main .main-block .more-info .information ul li:last-child {
+  width: calc(100% - 70px);
+}
+
+main .main-block .more-info .information ul li span {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+main .main-block .more-info .information ul li a,
+main .main-block .more-info .information ul li p {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0d444d;
+  padding: 0;
+  margin: 0;
+  margin-top: 9px;
+}
+
+main .main-block .more-info .interesting-facts {
+  padding-left: 73px;
+}
+
+main .main-block .more-info .interesting-facts h2 {
+  font-family: "Rubik", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.44px;
+  color: #0d444d;
+  text-transform: uppercase;
+  letter-spacing: -0.3px;
+}
+
+main .main-block .more-info .interesting-facts ul {
+  padding-left: 24px;
+  margin-top: 24px;
+}
+
+main .main-block .more-info .interesting-facts ul li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  width: calc(100% - 54px);
+}
+
+main .main-block .more-info .interesting-facts ul li::before {
+  width: 13px;
+  height: 16px;
+  content: " ";
+  background-image: url(../../assets/icons/pen-list-style.svg);
+  background-size: cover;
+  position: absolute;
+  left: -24px;
 }
 /*# sourceMappingURL=main.css.map */

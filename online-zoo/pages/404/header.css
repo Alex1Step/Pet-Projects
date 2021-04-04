@@ -104,11 +104,6 @@ header .content .wrapper-nav nav ul li:hover {
   background-size: 100% 2px;
 }
 
-header .content .wrapper-nav nav ul li:nth-child(3) {
-  border-bottom: 1px #c5e1e5 solid;
-  pointer-events: none;
-}
-
 header .content .wrapper-login {
   font-family: "Roboto", sans-serif;
   font-style: normal;

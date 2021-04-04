@@ -62,11 +62,6 @@ header {
             &:hover {
               background-size: 100% 2px;
             }
-
-            &:nth-child(3) {
-              border-bottom: 1px #c5e1e5 solid;
-              pointer-events: none;
-            }
           }
         }
       }

@@ -102,11 +102,6 @@ footer .content .wrapper-nav nav ul li a {
   color: #c5e1e5;
 }
 
-footer .content .wrapper-nav nav ul li:nth-child(3) {
-  border-bottom: 1px #c5e1e5 solid;
-  pointer-events: none;
-}
-
 footer .content .designer {
   display: -webkit-box;
   display: -ms-flexbox;

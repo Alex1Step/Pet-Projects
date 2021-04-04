@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,IAFA,CACF,QAAQ,CACN,YAAY,AAAA,UAAW,CAAA,CAAC,EAAE,UAAU,CAAC;EACnC,gBAAgB,EAAE,OAAO;EACzB,cAAc,EAAE,IAAI;CACrB;;AALL,AAMI,IANA,CACF,QAAQ,CAKN,YAAY,AAAA,UAAW,CAAA,CAAC,EAAE;EACxB,MAAM,EAAE,OAAO;CAChB;;AARL,AASI,IATA,CACF,QAAQ,CAQN,YAAY,AAAA,UAAW,CAAA,CAAC,CAAC,OAAO,CAAC;EAC/B,cAAc,EAAE,IAAI;CACrB",
+    "sources": [
+        "alligator-nth.scss"
+    ],
+    "names": [],
+    "file": "alligator-nth.css"
+}

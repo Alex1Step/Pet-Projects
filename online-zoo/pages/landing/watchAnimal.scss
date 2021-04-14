@@ -7,11 +7,11 @@ p {
 }
 
 .hero {
+  width: 100%;
   background-image: url(../../assets/images/landing-panda-1920.svg);
   background-color: #f6f9fa;
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
-  width: 100%;
   min-height: 803px;
   display: flex;
   align-items: center;
@@ -134,31 +134,43 @@ p {
           }
         }
       }
-      // &:hover {
-      //   animation: rotating 4s linear infinite;
-      //   path {
-      //     transform: scale(0.9, 0.9);
-      //   }
-      // }
-      // &:hover img {
-      //   animation: reverserotating 4s linear infinite;
-      // }
-      // @keyframes rotating {
-      //   0% {
-      //     transform: rotate(0deg);
-      //   }
-      //   100% {
-      //     transform: rotate(360deg);
-      //   }
-      // }
-      // @keyframes reverserotating {
-      //   0% {
-      //     transform: rotate(0deg);
-      //   }
-      //   100% {
-      //     transform: rotate(-360deg);
-      //   }
-      // }
+    }
+  }
+}
+
+@media (max-width: 1479px) {
+  .hero {
+    min-height: 810px;
+    .content-part {
+      max-width: 1200px;
+      padding-left: 30px;
+      padding-right: 30px;
+      .watch-online {
+        .first-h2 {
+          font-size: 72;
+          line-height: 85.32px;
+        }
+        .second-h2 {
+          font-size: 48;
+          line-height: 56.88px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+      .wrapper-big-panda {
+        .video-panda-on-landing {
+          width: 559.65px;
+          height: 463.63px;
+          mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
+          mask-repeat: no-repeat;
+          img {
+            width: 559.65px;
+            height: 463.63px;
+          }
+        }
+      }
     }
   }
 }

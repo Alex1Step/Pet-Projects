@@ -7,11 +7,11 @@ p {
 }
 
 .hero {
+  width: 100%;
   background-image: url(../../assets/images/landing-panda-1920.svg);
   background-color: #f6f9fa;
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
-  width: 100%;
   min-height: 803px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,6 +200,41 @@ p {
   100% {
     -webkit-filter: brightness(100%);
             filter: brightness(100%);
+  }
+}
+
+@media (max-width: 1479px) {
+  .hero {
+    min-height: 810px;
+  }
+  .hero .content-part {
+    max-width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .hero .content-part .watch-online .first-h2 {
+    font-size: 72;
+    line-height: 85.32px;
+  }
+  .hero .content-part .watch-online .second-h2 {
+    font-size: 48;
+    line-height: 56.88px;
+  }
+  .hero .content-part .watch-online p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .hero .content-part .wrapper-big-panda .video-panda-on-landing {
+    width: 559.65px;
+    height: 463.63px;
+    -webkit-mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
+            mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+  }
+  .hero .content-part .wrapper-big-panda .video-panda-on-landing img {
+    width: 559.65px;
+    height: 463.63px;
   }
 }
 /*# sourceMappingURL=watchAnimal.css.map */

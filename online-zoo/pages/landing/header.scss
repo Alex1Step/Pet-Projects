@@ -173,6 +173,9 @@ header {
           cursor: pointer;
         }
       }
+      .profile-btn {
+        display: none;
+      }
     }
     ul {
       display: flex;
@@ -188,6 +191,27 @@ header {
         button {
           color: #c5e1e5;
         }
+      }
+    }
+  }
+}
+//adaptive 1200
+@media (max-width: 1479px) {
+  .wrapper-header {
+    height: 124px;
+  }
+  .content {
+    padding-left: 30px;
+    padding-right: 30px;
+    .wrapper-login {
+      .signup-btn {
+        display: none;
+      }
+      .login-btn {
+        display: none;
+      }
+      .profile-btn {
+        display: inline !important;
       }
     }
   }

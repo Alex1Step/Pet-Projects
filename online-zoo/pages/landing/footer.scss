@@ -87,3 +87,13 @@ footer {
     }
   }
 }
+//adaptive 1200
+@media (max-width: 1479px) {
+  .wrapper-footer {
+    height: 121px;
+  }
+  .content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

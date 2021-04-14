@@ -233,6 +233,10 @@ header .content .wrapper-login .signup-btn:hover {
   cursor: pointer;
 }
 
+header .content .wrapper-login .profile-btn {
+  display: none;
+}
+
 header .content ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,5 +261,24 @@ header .content ul li a {
 
 header .content ul li button {
   color: #c5e1e5;
+}
+
+@media (max-width: 1479px) {
+  .wrapper-header {
+    height: 124px;
+  }
+  .content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .content .wrapper-login .signup-btn {
+    display: none;
+  }
+  .content .wrapper-login .login-btn {
+    display: none;
+  }
+  .content .wrapper-login .profile-btn {
+    display: inline !important;
+  }
 }
 /*# sourceMappingURL=header.css.map */

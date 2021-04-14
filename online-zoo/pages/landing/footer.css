@@ -138,4 +138,14 @@ footer .content .designer span {
 footer .content .designer .school {
   margin-top: 12px;
 }
+
+@media (max-width: 1479px) {
+  .wrapper-footer {
+    height: 121px;
+  }
+  .content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 /*# sourceMappingURL=footer.css.map */

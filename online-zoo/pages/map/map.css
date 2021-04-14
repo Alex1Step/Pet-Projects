@@ -146,9 +146,9 @@
   content: "";
   position: absolute;
   left: 186px;
-  bottom: -30px;
-  border: 15px solid transparent;
-  border-top: 15px solid #0d444d;
+  bottom: -33px;
+  border: 17px solid transparent;
+  border-top: 17px solid #0d444d;
 }
 
 .map-container .animal-icon .tooltip::after {

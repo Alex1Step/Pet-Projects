@@ -23,9 +23,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: flex;
+      -ms-flex-align: flex;
+          align-items: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -153,6 +153,36 @@
   }
   .forest .small-tree {
     top: calc(100vw / 1920 * 523 - 460px);
+  }
+}
+
+@media (max-width: 1479px) {
+  .how-it-works {
+    min-height: 328px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 19px;
+  }
+  .how-it-works .components-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 74px;
+    padding-right: 103px;
+  }
+  .how-it-works .components-container h2 {
+    top: -42px;
+    left: 28px;
+  }
+  .how-it-works .components-container .figure-component {
+    margin-right: 0;
+  }
+  .how-it-works .components-container .figure-component .component-wrapper {
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=howitworks.css.map */

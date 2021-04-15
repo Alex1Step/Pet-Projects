@@ -12,7 +12,7 @@
   .components-container {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex;
     justify-content: center;
     max-width: 1480px;
     font-family: "Roboto", sans-serif;
@@ -117,6 +117,33 @@
     }
     .small-tree {
       top: calc(100vw / 1920 * 523 - 460px);
+    }
+  }
+}
+
+//adaptive 1200
+@media (max-width: 1479px) {
+  .how-it-works {
+    min-height: 328px;
+    align-items: flex-start;
+    padding-top: 19px;
+    .components-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0;
+      justify-content: space-between;
+      padding-left: 74px;
+      padding-right: 103px;
+      h2 {
+        top: -42px;
+        left: 28px;
+      }
+      .figure-component {
+        margin-right: 0;
+        .component-wrapper {
+          margin-top: 15px;
+        }
+      }
     }
   }
 }

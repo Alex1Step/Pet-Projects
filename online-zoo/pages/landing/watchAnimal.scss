@@ -12,7 +12,6 @@ p {
   background-color: #f6f9fa;
   background-position: center center;
   background-size: cover;
-  min-height: 803px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,38 +136,53 @@ p {
     }
   }
 }
-
+//adaptive 1200
 @media (max-width: 1479px) {
   .hero {
-    min-height: 810px;
-    .content-part {
-      max-width: 1200px;
-      padding-left: 30px;
-      padding-right: 30px;
-      .watch-online {
-        .first-h2 {
-          font-size: 72;
-          line-height: 85.32px;
-        }
-        .second-h2 {
-          font-size: 48;
-          line-height: 56.88px;
-        }
-        p {
-          font-size: 16px;
-          line-height: 30px;
-        }
+    background-image: url(../../assets/images/landing-panda-1200.svg);
+    background-position: bottom center;
+  }
+  .content-part {
+    max-width: 1200px;
+    min-height: 675px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .watch-online {
+      .first-h2 {
+        letter-spacing: -4px;
       }
-      .wrapper-big-panda {
-        .video-panda-on-landing {
+      .second-h2 {
+        font-size: 48px;
+        line-height: 56.88px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 24px;
+        width: 480px;
+      }
+      .watch-now-btn {
+        margin-top: 37px;
+      }
+    }
+    .wrapper-big-panda {
+      .play-panda-video-btn {
+        background-image: url(../../assets/icons/play-btn.svg);
+        background-size: cover;
+        width: 84.47px;
+        height: 71px;
+        top: 54%;
+        left: calc(50% - 20px);
+      }
+      .video-panda-on-landing {
+        width: 559.65px;
+        height: 463.63px;
+        margin-top: 55px;
+        mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
+        mask-repeat: no-repeat;
+        img {
           width: 559.65px;
           height: 463.63px;
-          mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
-          mask-repeat: no-repeat;
-          img {
-            width: 559.65px;
-            height: 463.63px;
-          }
         }
       }
     }

@@ -263,22 +263,29 @@ header .content ul li button {
   color: #c5e1e5;
 }
 
-@media (max-width: 1479px) {
-  .wrapper-header {
+@media screen and (max-width: 1479px) {
+  header .wrapper-header {
     height: 124px;
   }
-  .content {
+  header .content {
     padding-left: 30px;
     padding-right: 30px;
+    margin-top: 13px;
   }
-  .content .wrapper-login .signup-btn {
+  header .content .wrapper-nav nav ul li {
+    margin-left: 3.75vw;
+  }
+  header .content .wrapper-login ul li {
+    margin-left: 10px;
+  }
+  header .content .wrapper-login .signup-btn {
     display: none;
   }
-  .content .wrapper-login .login-btn {
+  header .content .wrapper-login .login-btn {
     display: none;
   }
-  .content .wrapper-login .profile-btn {
-    display: inline !important;
+  header .content .wrapper-login .profile-btn {
+    display: inline;
   }
 }
 /*# sourceMappingURL=header.css.map */

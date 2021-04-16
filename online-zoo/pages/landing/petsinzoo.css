@@ -144,6 +144,13 @@
   text-decoration: none;
 }
 
+.pets-in-zoo .block-with-slider .slider-container .slide:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-box-shadow: 0px 2px 30px #19707d;
+          box-shadow: 0px 2px 30px #19707d;
+}
+
 .pets-in-zoo .block-with-slider .slider-container .slide:hover .animal-with-mask {
   -webkit-animation: rotating 0.3s linear;
           animation: rotating 0.3s linear;
@@ -353,5 +360,83 @@
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
   cursor: pointer;
+}
+
+@media (max-width: 1479px) {
+  .pets-in-zoo .info-block {
+    max-width: 1200px;
+    padding: 0 30px 0 30px;
+  }
+  .pets-in-zoo .info-block h2 {
+    margin-top: 50px;
+  }
+  .pets-in-zoo .info-block a .button-chose-pets {
+    width: 303px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 21, 1px;
+    margin-top: 50px;
+  }
+  .pets-in-zoo .block-with-slider {
+    padding: 0 30px 0 30px;
+    max-width: 1200px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .pets-in-zoo .block-with-slider::after {
+    bottom: 16px;
+    right: 38px;
+  }
+  .pets-in-zoo .block-with-slider .slider-container {
+    grid-column-gap: 33.01px;
+    grid-row-gap: 31.19px;
+    margin-top: 65px;
+  }
+  .pets-in-zoo .block-with-slider .slider-container .slide {
+    width: 336.72px;
+    height: 273.41px;
+  }
+  .pets-in-zoo .block-with-slider .slider-container .slide .info-of-animal span {
+    font-size: 17.24px;
+    line-height: 20.2px;
+    margin-top: 17px;
+    margin-left: 20px;
+  }
+  .pets-in-zoo .block-with-slider .slider-container .slide .info-of-animal p {
+    font-size: 13.41px;
+    line-height: 15.71px;
+    margin-left: 20px;
+  }
+  .pets-in-zoo .block-with-slider .slider-container .slide .info-of-animal::before {
+    font-size: 22.99px;
+    top: 20px;
+    right: 8px;
+  }
+  .pets-in-zoo .block-with-slider .slider-container .slide .animal-photo {
+    min-height: 200.93px;
+  }
+  .pets-in-zoo .block-with-slider .slider-container .slide .animal-photo .animal-with-mask {
+    width: 157px;
+    height: 157px;
+    -webkit-mask-image: url(../../assets/images/small-mask-for-animal-1200.svg);
+            mask-image: url(../../assets/images/small-mask-for-animal-1200.svg);
+  }
+  .pets-in-zoo .block-with-slider .slider-container .slide .animal-photo .animal-with-mask img {
+    width: 168.57px;
+    height: 162.7379px;
+  }
+  .pets-in-zoo .block-with-slider .slider-container .previous {
+    top: 290px;
+    right: -45px;
+  }
+  .pets-in-zoo .block-with-slider .slider-container .next {
+    top: 238px;
+    right: -45px;
+  }
 }
 /*# sourceMappingURL=petsinzoo.css.map */

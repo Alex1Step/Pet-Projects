@@ -99,6 +99,10 @@
         a {
           text-decoration: none;
         }
+        &:hover {
+          transform: scale(1.05, 1.05);
+          box-shadow: 0px 2px 30px rgba(25, 112, 125, 1);
+        }
         &:hover .animal-with-mask {
           animation: rotating 0.3s linear;
           mask-size: 94%;
@@ -221,6 +225,87 @@
         &:hover {
           transform: scale(1.2, 1.2);
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+//adaptive 1200
+@media (max-width: 1479px) {
+  .pets-in-zoo {
+    .info-block {
+      max-width: 1200px;
+      padding: 0 30px 0 30px;
+      h2 {
+        margin-top: 50px;
+      }
+      a {
+        .button-chose-pets {
+          width: 303px;
+          height: 40px;
+          font-size: 16px;
+          line-height: 21, 1px;
+          margin-top: 50px;
+        }
+      }
+    }
+    .block-with-slider {
+      padding: 0 30px 0 30px;
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      &::after {
+        bottom: 16px;
+        right: 38px;
+      }
+      .slider-container {
+        grid-column-gap: 33.01px;
+        grid-row-gap: 31.19px;
+        margin-top: 65px;
+        .slide {
+          width: 336.72px;
+          height: 273.41px;
+          .info-of-animal {
+            span {
+              font-size: 17.24px;
+              line-height: 20.2px;
+              margin-top: 17px;
+              margin-left: 20px;
+            }
+            p {
+              font-size: 13.41px;
+              line-height: 15.71px;
+              margin-left: 20px;
+            }
+            &::before {
+              font-size: 22.99px;
+              top: 20px;
+              right: 8px;
+            }
+          }
+          .animal-photo {
+            min-height: 200.93px;
+            .animal-with-mask {
+              width: 157px;
+              height: 157px;
+              mask-image: url(../../assets/images/small-mask-for-animal-1200.svg);
+              // mask-size: cover;
+              img {
+                width: 168.57px;
+                height: 162.7379px;
+              }
+            }
+          }
+        }
+        .previous {
+          top: 290px;
+          right: -45px;
+        }
+        .next {
+          top: 238px;
+          right: -45px;
         }
       }
     }

@@ -124,7 +124,7 @@
 //adaptive 1200
 @media (max-width: 1479px) {
   .how-it-works {
-    min-height: 328px;
+    min-height: 235px;
     align-items: flex-start;
     padding-top: 19px;
     .components-container {
@@ -144,6 +144,31 @@
           margin-top: 15px;
         }
       }
+    }
+  }
+  .forest {
+    .panda {
+      top: 255px;
+      left: 76.4%;
+    }
+    .bamboo {
+      top: 142px;
+      left: 83.7%;
+    }
+    .small-bamboo {
+      top: 61px;
+      left: 0%;
+    }
+    .tree-left {
+      top: 65px;
+      left: 21.5%;
+    }
+    .tree-right {
+      visibility: hidden;
+    }
+    .small-tree {
+      top: 125px;
+      left: 50.8%;
     }
   }
 }

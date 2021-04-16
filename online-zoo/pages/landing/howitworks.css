@@ -158,7 +158,7 @@
 
 @media (max-width: 1479px) {
   .how-it-works {
-    min-height: 328px;
+    min-height: 235px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -183,6 +183,29 @@
   }
   .how-it-works .components-container .figure-component .component-wrapper {
     margin-top: 15px;
+  }
+  .forest .panda {
+    top: 255px;
+    left: 76.4%;
+  }
+  .forest .bamboo {
+    top: 142px;
+    left: 83.7%;
+  }
+  .forest .small-bamboo {
+    top: 61px;
+    left: 0%;
+  }
+  .forest .tree-left {
+    top: 65px;
+    left: 21.5%;
+  }
+  .forest .tree-right {
+    visibility: hidden;
+  }
+  .forest .small-tree {
+    top: 125px;
+    left: 50.8%;
   }
 }
 /*# sourceMappingURL=howitworks.css.map */

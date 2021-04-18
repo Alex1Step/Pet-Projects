@@ -185,3 +185,43 @@
     }
   }
 }
+
+//adaptive 1200
+@media (max-width: 1479px) {
+  .testimonials {
+    .info-block-3 {
+      width: 100%;
+      max-width: 1200px;
+      margin-top: 53px;
+      padding: 0 30px;
+      a {
+        .button-leave-feedback {
+          width: 236px;
+          height: 40px;
+          font-size: 16px;
+          line-height: 21.1px;
+        }
+      }
+    }
+    .feedback-block {
+      max-width: 1200px;
+      padding: 0 30px;
+      grid-column-gap: 18px;
+      margin-top: 37px;
+      .feedbackN {
+        width: 368px;
+        height: 259px;
+        .feedback-text {
+          width: 375px;
+          height: 200px;
+          mask-image: url(../../assets/images/feedback-mask1200.svg);
+          mask-position: -29px -27px;
+          mask-size: 113%;
+          p {
+            max-width: 223px;
+          }
+        }
+      }
+    }
+  }
+}

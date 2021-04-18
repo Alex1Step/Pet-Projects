@@ -24,8 +24,8 @@
     margin-left: 223px;
     h2 {
       position: absolute;
-      top: -75px;
-      left: -5px;
+      top: -170px; /*75*/
+      left: -114px; /*114*/
       font-family: "Rubik", monospace;
       font-style: normal;
       font-weight: 400;
@@ -43,7 +43,7 @@
       margin-right: 272px;
     }
     .component-wrapper {
-      margin-top: 50px;
+      margin-top: -44px; /*50*/
       margin-bottom: 17px;
       position: relative;
       width: 145px;
@@ -57,6 +57,11 @@
         top: calc(50% - 32px);
         left: calc(50% - 32px);
       }
+    }
+    span {
+      // display: inline-block;
+      // width: 150px;
+      white-space: nowrap;
     }
   }
 }

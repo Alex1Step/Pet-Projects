@@ -41,8 +41,10 @@
 
 .how-it-works .components-container h2 {
   position: absolute;
-  top: -75px;
-  left: -5px;
+  top: -170px;
+  /*75*/
+  left: -114px;
+  /*114*/
   font-family: "Rubik", monospace;
   font-style: normal;
   font-weight: 400;
@@ -71,7 +73,8 @@
 }
 
 .how-it-works .components-container .component-wrapper {
-  margin-top: 50px;
+  margin-top: -44px;
+  /*50*/
   margin-bottom: 17px;
   position: relative;
   width: 145px;
@@ -87,6 +90,10 @@
   position: absolute;
   top: calc(50% - 32px);
   left: calc(50% - 32px);
+}
+
+.how-it-works .components-container span {
+  white-space: nowrap;
 }
 
 .forest {

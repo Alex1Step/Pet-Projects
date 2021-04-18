@@ -146,3 +146,19 @@ body {
   height: 37px;
   background-color: #2a8086;
 }
+
+//adaptive 1200
+@media (max-width: 1919px) {
+  .donate {
+    .pinguin {
+      left: 800px;
+    }
+    .panda {
+      bottom: 64px;
+      left: 400px;
+    }
+    .left-tree {
+      left: 100px;
+    }
+  }
+}

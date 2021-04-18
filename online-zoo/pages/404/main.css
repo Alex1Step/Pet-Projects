@@ -203,4 +203,17 @@ body {
   height: 37px;
   background-color: #2a8086;
 }
+
+@media (max-width: 1919px) {
+  .donate .pinguin {
+    left: 800px;
+  }
+  .donate .panda {
+    bottom: 64px;
+    left: 400px;
+  }
+  .donate .left-tree {
+    left: 100px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

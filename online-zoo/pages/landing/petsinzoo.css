@@ -363,6 +363,9 @@
 }
 
 @media (max-width: 1479px) {
+  .pets-in-zoo {
+    min-height: 815px;
+  }
   .pets-in-zoo .info-block {
     max-width: 1200px;
     padding: 0 30px 0 30px;

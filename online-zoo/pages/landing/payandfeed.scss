@@ -142,3 +142,59 @@
     min-height: calc(100vw / 1920 * 564);
   }
 }
+
+//adaptive 1200
+@media (max-width: 1479px) {
+  .pay-and-feed {
+    min-height: 564px;
+    background-image: url(../../assets/images/payandfead-bckgrnd1200.svg);
+    .small-bamboo-2 {
+      display: none;
+    }
+    .tree-left-2 {
+      width: 102.41px;
+      height: 181px;
+      top: 289px;
+      left: -3.7%;
+    }
+    .content-conteiner {
+      max-width: 1200px;
+      .info-block-2 {
+        max-width: 1200px;
+        margin-top: 27px;
+        padding: 0 145px 0 30px;
+        h2 {
+          margin-top: 76px;
+          margin-left: -3px;
+        }
+        .button-donate {
+          width: 174px;
+          height: 40px;
+          letter-spacing: -0.7px;
+          margin-top: 77px;
+          span {
+            width: 70px;
+            overflow: hidden;
+            display: inline-block;
+            white-space: nowrap;
+          }
+        }
+      }
+      .components-container-2 {
+        margin-left: -38px;
+        margin-top: 20px;
+        .figure-component-2 {
+          margin-right: 0px;
+          margin: 0px 60px;
+          justify-content: center;
+          .elem-with-arrow::after {
+            top: 54px;
+            left: 161px;
+            width: 214px;
+            background-image: url("../../assets/icons/pay-and-feed-ARROW1200.svg");
+          }
+        }
+      }
+    }
+  }
+}

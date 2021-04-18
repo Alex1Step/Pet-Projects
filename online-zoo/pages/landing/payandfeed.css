@@ -197,4 +197,61 @@
     min-height: calc(100vw / 1920 * 564);
   }
 }
+
+@media (max-width: 1479px) {
+  .pay-and-feed {
+    min-height: 564px;
+    background-image: url(../../assets/images/payandfead-bckgrnd1200.svg);
+  }
+  .pay-and-feed .small-bamboo-2 {
+    display: none;
+  }
+  .pay-and-feed .tree-left-2 {
+    width: 102.41px;
+    height: 181px;
+    top: 289px;
+    left: -3.7%;
+  }
+  .pay-and-feed .content-conteiner {
+    max-width: 1200px;
+  }
+  .pay-and-feed .content-conteiner .info-block-2 {
+    max-width: 1200px;
+    margin-top: 27px;
+    padding: 0 145px 0 30px;
+  }
+  .pay-and-feed .content-conteiner .info-block-2 h2 {
+    margin-top: 76px;
+    margin-left: -3px;
+  }
+  .pay-and-feed .content-conteiner .info-block-2 .button-donate {
+    width: 174px;
+    height: 40px;
+    letter-spacing: -0.7px;
+    margin-top: 77px;
+  }
+  .pay-and-feed .content-conteiner .info-block-2 .button-donate span {
+    width: 70px;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .pay-and-feed .content-conteiner .components-container-2 {
+    margin-left: -38px;
+    margin-top: 20px;
+  }
+  .pay-and-feed .content-conteiner .components-container-2 .figure-component-2 {
+    margin-right: 0px;
+    margin: 0px 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pay-and-feed .content-conteiner .components-container-2 .figure-component-2 .elem-with-arrow::after {
+    top: 54px;
+    left: 161px;
+    width: 214px;
+    background-image: url("../../assets/icons/pay-and-feed-ARROW1200.svg");
+  }
+}
 /*# sourceMappingURL=payandfeed.css.map */

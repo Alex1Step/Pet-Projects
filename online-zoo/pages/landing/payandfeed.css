@@ -198,7 +198,7 @@
   }
 }
 
-@media (max-width: 1479px) {
+@media (max-width: 1919px) {
   .pay-and-feed {
     min-height: 564px;
     background-image: url(../../assets/images/payandfead-bckgrnd1200.svg);
@@ -252,6 +252,12 @@
     left: 161px;
     width: 214px;
     background-image: url("../../assets/icons/pay-and-feed-ARROW1200.svg");
+  }
+}
+
+@media (max-width: 1919px) and (max-width: 1919px) and (min-width: 1200px) {
+  .pay-and-feed {
+    min-height: calc(100vw / 1200 * 564);
   }
 }
 /*# sourceMappingURL=payandfeed.css.map */

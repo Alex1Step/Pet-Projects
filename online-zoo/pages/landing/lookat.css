@@ -184,4 +184,36 @@
           transform: scale(1.2, 1.2);
   cursor: pointer;
 }
+
+@media (max-width: 1919px) {
+  .look-at {
+    min-height: 290px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .look-at .content-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    min-height: 226px;
+    padding: 48px 30px 0px 30px;
+  }
+  .look-at .content-wrapper .slider-look {
+    margin-top: 48px;
+    margin-left: 11px;
+    width: calc(100% - 140px);
+  }
+  .look-at .content-wrapper .slider-look a:nth-last-child(-n + 3) {
+    display: none;
+  }
+  .look-at .content-wrapper .slider-look .previous {
+    top: 67px;
+    right: -109px;
+  }
+  .look-at .content-wrapper .slider-look .next {
+    top: 16px;
+    right: -111px;
+  }
+}
 /*# sourceMappingURL=lookat.css.map */

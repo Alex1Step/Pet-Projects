@@ -136,11 +136,23 @@ p {
     }
   }
 }
+
+@media (min-width: 1921px) {
+  .hero {
+    min-height: calc(100vw / 1920 * 781);
+  }
+}
+
 //adaptive 1200
-@media (max-width: 1479px) {
+@media (max-width: 1919px) {
   .hero {
     background-image: url(../../assets/images/landing-panda-1200.svg);
     background-position: bottom center;
+  }
+  @media (max-width: 1919px) and (min-width: 1200px) {
+    .hero {
+      min-height: calc(100vw / 1200 * 675);
+    }
   }
   .content-part {
     max-width: 1200px;

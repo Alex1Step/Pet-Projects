@@ -187,8 +187,9 @@
 }
 
 //adaptive 1200
-@media (max-width: 1479px) {
+@media (max-width: 1919px) {
   .testimonials {
+    min-height: 390px;
     .info-block-3 {
       width: 100%;
       max-width: 1200px;

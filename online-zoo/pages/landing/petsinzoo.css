@@ -362,7 +362,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1479px) {
+@media (max-width: 1919px) {
   .pets-in-zoo {
     min-height: 815px;
   }

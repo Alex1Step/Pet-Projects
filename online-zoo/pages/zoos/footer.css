@@ -138,4 +138,27 @@ footer .content .designer span {
 footer .content .designer .school {
   margin-top: 12px;
 }
+
+@media (max-width: 1919px) {
+  .wrapper-footer {
+    height: 121px;
+  }
+  footer .content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  footer .content .wrapper-nav nav ul li {
+    margin-left: 3.75vw;
+  }
+  footer .content .designer {
+    padding-top: 0px;
+  }
+  footer .content .designer span {
+    font-size: 12px;
+    line-height: 14.06px;
+  }
+  footer .content .designer .school {
+    margin-top: 9px;
+  }
+}
 /*# sourceMappingURL=footer.css.map */

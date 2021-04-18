@@ -87,3 +87,35 @@ footer {
     }
   }
 }
+
+//adaptive 1200
+@media (max-width: 1919px) {
+  .wrapper-footer {
+    height: 121px;
+  }
+  footer {
+    .content {
+      padding-left: 30px;
+      padding-right: 30px;
+      .wrapper-nav {
+        nav {
+          ul {
+            li {
+              margin-left: 3.75vw;
+            }
+          }
+        }
+      }
+      .designer {
+        padding-top: 0px;
+        span {
+          font-size: 12px;
+          line-height: 14.06px;
+        }
+        .school {
+          margin-top: 9px;
+        }
+      }
+    }
+  }
+}

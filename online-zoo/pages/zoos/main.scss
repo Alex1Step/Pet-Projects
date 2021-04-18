@@ -455,3 +455,125 @@ main {
   height: 37px;
   background-color: #2a8086;
 }
+
+//adaptive 1200
+@media (max-width: 1919px) {
+  main {
+    max-width: 1200px;
+    .sidebar {
+      width: 106px;
+      height: 527px;
+      margin: 29px 0px 0px 14px;
+      .animal-icon {
+        transform: scale(0.9, 0.9);
+      }
+    }
+    .main-block {
+      padding: 0 30px;
+      .info-block {
+        margin-top: 7px;
+        margin-bottom: 0px;
+        h2 {
+          margin-left: 11px;
+        }
+        .info-icons {
+          margin-top: 28px;
+          margin-right: 27px;
+        }
+      }
+      h3 {
+        margin-bottom: 12px;
+        margin-left: 16px;
+        margin-top: 2px;
+      }
+      .main-video {
+        margin-top: 8px;
+        margin-bottom: 28px;
+        .main-video-wrapper {
+          width: 1006px;
+          height: 596px;
+          margin-right: 0px;
+          iframe {
+            width: 1006px;
+            min-height: 596px;
+          }
+        }
+      }
+      .slider-wrapper {
+        margin-left: 11px;
+        margin-top: 0px;
+        .slide {
+          width: 299.12px;
+          height: 192.52px;
+          margin-right: 23px;
+          img {
+            top: 19px;
+            left: 23px;
+            transform: scale(0.8, 0.8);
+          }
+        }
+        .previous {
+          width: 15px;
+          height: 21px;
+          top: 115px;
+          right: 20px;
+        }
+        .next {
+          width: 15px;
+          height: 21px;
+          top: 63px;
+          right: 17px;
+        }
+      }
+      .more-info {
+        margin-top: 47px; /**/
+        .information {
+          margin-left: 13px; /**/
+          ul {
+            li {
+              &:last-child {
+                width: calc(100% - 190px);
+              }
+            }
+          }
+        }
+        .interesting-facts {
+          padding-left: 0px; /**/
+          margin-left: -126px; /**/
+        }
+      }
+    }
+  }
+  .donate {
+    min-height: 366px;
+    background-image: url(../../assets/images/background-zoos-page.png);
+    position: center;
+    .panda {
+      bottom: 24px;
+      left: 592px;
+    }
+    .left-tree {
+      bottom: 27px;
+      left: 141px;
+    }
+    .right-tree {
+      bottom: 78px;
+      right: 97px;
+    }
+    .button-wrapper {
+      max-width: 1200px;
+      .button-donate {
+        bottom: -5px;
+        left: calc(50% - 77px);
+        width: 174px;
+        height: 40px;
+        span {
+          display: inline;
+          width: 65px;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

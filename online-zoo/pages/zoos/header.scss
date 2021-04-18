@@ -173,6 +173,9 @@ header {
           cursor: pointer;
         }
       }
+      .profile-btn {
+        display: none;
+      }
     }
     ul {
       display: flex;
@@ -187,6 +190,45 @@ header {
         }
         button {
           color: #c5e1e5;
+        }
+      }
+    }
+  }
+}
+
+//adaptive 1200
+@media screen and (max-width: 1919px) {
+  .wrapper-header {
+    height: 124px;
+  }
+  header {
+    .content {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 13px;
+      .wrapper-nav {
+        nav {
+          ul {
+            li {
+              margin-left: 3.75vw;
+            }
+          }
+        }
+      }
+      .wrapper-login {
+        ul {
+          li {
+            margin-left: 10px;
+          }
+        }
+        .signup-btn {
+          display: none;
+        }
+        .login-btn {
+          display: none;
+        }
+        .profile-btn {
+          display: inline;
         }
       }
     }

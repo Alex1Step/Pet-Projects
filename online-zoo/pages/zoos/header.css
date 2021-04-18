@@ -233,6 +233,10 @@ header .content .wrapper-login .signup-btn:hover {
   cursor: pointer;
 }
 
+header .content .wrapper-login .profile-btn {
+  display: none;
+}
+
 header .content ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,5 +261,31 @@ header .content ul li a {
 
 header .content ul li button {
   color: #c5e1e5;
+}
+
+@media screen and (max-width: 1919px) {
+  .wrapper-header {
+    height: 124px;
+  }
+  header .content {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 13px;
+  }
+  header .content .wrapper-nav nav ul li {
+    margin-left: 3.75vw;
+  }
+  header .content .wrapper-login ul li {
+    margin-left: 10px;
+  }
+  header .content .wrapper-login .signup-btn {
+    display: none;
+  }
+  header .content .wrapper-login .login-btn {
+    display: none;
+  }
+  header .content .wrapper-login .profile-btn {
+    display: inline;
+  }
 }
 /*# sourceMappingURL=header.css.map */

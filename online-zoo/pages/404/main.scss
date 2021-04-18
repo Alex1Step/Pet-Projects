@@ -162,3 +162,25 @@ body {
     }
   }
 }
+
+//adaptive 640
+@media (max-width: 1199px) {
+  .donate {
+    .pinguin {
+      bottom: 39px;
+      left: 200px;
+    }
+    .panda {
+      bottom: 8px;
+      left: 356px;
+    }
+    .left-tree {
+      bottom: 118px;
+      left: 250px;
+    }
+    .right-tree {
+      bottom: 58px;
+      left: 26px;
+    }
+  }
+}

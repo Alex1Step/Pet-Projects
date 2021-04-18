@@ -118,3 +118,41 @@ footer {
     }
   }
 }
+
+//adaptive 640
+@media (max-width: 1199px) {
+  .wrapper-footer {
+    height: 78px;
+  }
+  footer {
+    max-width: 640px;
+    .content {
+      padding-left: 20px;
+      padding-right: 14px;
+      .wrapper-nav {
+        svg {
+          width: 49.08px;
+          height: 38px;
+        }
+        nav {
+          display: none;
+          ul {
+            li {
+              margin-left: 3.75vw;
+            }
+          }
+        }
+      }
+      .designer {
+        padding-top: 0px;
+        span {
+          font-size: 10px;
+          line-height: 12px;
+        }
+        .school {
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}

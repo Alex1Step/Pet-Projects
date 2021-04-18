@@ -271,7 +271,12 @@ header {
 
 //adaptive 640
 @media (max-width: 1199px) {
+  .forFixed {
+    display: block;
+    height: 78px;
+  }
   .wrapper-header {
+    z-index: 5;
     position: fixed;
     height: 78px;
   }

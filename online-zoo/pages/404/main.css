@@ -216,4 +216,23 @@ body {
     left: 100px;
   }
 }
+
+@media (max-width: 1199px) {
+  .donate .pinguin {
+    bottom: 39px;
+    left: 200px;
+  }
+  .donate .panda {
+    bottom: 8px;
+    left: 356px;
+  }
+  .donate .left-tree {
+    bottom: 118px;
+    left: 250px;
+  }
+  .donate .right-tree {
+    bottom: 58px;
+    left: 26px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

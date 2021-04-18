@@ -195,3 +195,40 @@
     }
   }
 }
+
+//adaptive 1200
+@media (max-width: 1919px) {
+  .map-container {
+    max-width: 1200px;
+    padding: 0 30px;
+    min-height: 872px;
+    align-items: flex-start;
+    .wrapper-h2 {
+      h2 {
+        margin-top: 0px;
+      }
+    }
+    .big-map {
+      margin-top: 35px;
+      margin-left: -5px;
+      width: 1140px;
+      height: 685.4px;
+    }
+    [title="eagle"] {
+      top: 380px;
+      left: 141px;
+    }
+    [title="aligator"] {
+      top: 449px;
+      left: 273px;
+    }
+    [title="gorilla"] {
+      top: 544px;
+      left: 570px;
+    }
+    [title="panda"] {
+      top: 444px;
+      left: 810px;
+    }
+  }
+}

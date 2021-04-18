@@ -232,3 +232,54 @@
     }
   }
 }
+
+//adaptive 640
+@media (max-width: 1199px) {
+  .map-container {
+    max-width: 640px;
+    padding: 0 0px;
+    min-height: 545px;
+    .wrapper-h2 {
+      h2 {
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 11px;
+        margin-left: 20px;
+      }
+    }
+    .big-map {
+      margin-top: 43px;
+      margin-left: 15px;
+      width: 571px;
+      height: 397px;
+    }
+    [title="eagle"] {
+      transform: scale(0.75, 0.75);
+      top: 260px;
+      left: 35px;
+    }
+    [title="aligator"] {
+      transform: scale(0.75, 0.75);
+      top: 296px;
+      left: 119px;
+    }
+    [title="gorilla"] {
+      transform: scale(0.75, 0.75);
+      top: 330px;
+      left: 271px;
+    }
+    [title="panda"] {
+      transform: scale(0.75, 0.75);
+      top: 271px;
+      left: 397px;
+    }
+    .minus {
+      bottom: 18px;
+      right: 36px;
+    }
+    .plus {
+      bottom: 19px;
+      right: 83px;
+    }
+  }
+}

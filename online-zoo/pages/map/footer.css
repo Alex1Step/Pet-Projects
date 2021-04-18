@@ -161,4 +161,34 @@ footer .content .designer .school {
     margin-top: 9px;
   }
 }
+
+@media (max-width: 1199px) {
+  .wrapper-footer {
+    height: 78px;
+  }
+  footer .content {
+    padding-left: 20px;
+    padding-right: 14px;
+  }
+  footer .content .wrapper-nav svg {
+    width: 49.08px;
+    height: 38px;
+  }
+  footer .content .wrapper-nav nav {
+    display: none;
+  }
+  footer .content .wrapper-nav nav ul li {
+    margin-left: 3.75vw;
+  }
+  footer .content .designer {
+    padding-top: 0px;
+  }
+  footer .content .designer span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  footer .content .designer .school {
+    margin-top: 3px;
+  }
+}
 /*# sourceMappingURL=footer.css.map */

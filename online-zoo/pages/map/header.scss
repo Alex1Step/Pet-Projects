@@ -81,6 +81,9 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .burger {
+        display: none;
+      }
       ul {
         li {
           margin-left: 15px;
@@ -196,11 +199,47 @@ header {
   }
 }
 
+.show-burger-menu {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 374px;
+  top: 78px;
+  background: #2a8086;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      padding: 16px 0;
+      list-style-type: none;
+      a {
+        font-family: "Roboto Mono", monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #f3f7f8;
+        text-align: center;
+      }
+    }
+  }
+  &.show {
+    display: flex;
+  }
+}
+
 //adaptive 1200
 @media screen and (max-width: 1919px) {
   header {
     .wrapper-header {
       height: 124px;
+      position: relative;
     }
     .content {
       padding-left: 30px;
@@ -235,6 +274,49 @@ header {
   }
 }
 
-//adaptive 1200
-@media screen and (max-width: 1919px) {
+//adaptive 640
+@media (max-width: 1199px) {
+  .wrapper-header {
+    position: fixed;
+    height: 78px;
+  }
+  header {
+    .content {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 5px;
+      max-width: 640px;
+      .wrapper-nav {
+        .header-logo {
+          svg {
+            width: 49.08px;
+            height: 38px;
+          }
+        }
+        nav {
+          display: none;
+          ul {
+            li {
+              display: none;
+            }
+          }
+        }
+      }
+      .wrapper-login {
+        ul {
+          li {
+            display: none;
+          }
+        }
+        .burger {
+          display: block;
+          width: 35px;
+          height: 35px;
+          margin-right: 8px;
+          background-image: url(../../assets/icons/Burger-menu.svg);
+        }
+        justify-content: flex-end;
+      }
+    }
+  }
 }

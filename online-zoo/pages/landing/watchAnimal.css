@@ -69,7 +69,23 @@ p {
   color: #f3f7f8;
 }
 
-.content-part .watch-online .watch-now-btn {
+.content-part .watch-online .hero-btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-part .watch-online .hero-btns-container a {
+  text-decoration: none;
+}
+
+.content-part .watch-online .hero-btns-container .watch-now-btn {
   width: 258px;
   height: 52px;
   margin-top: 86px;
@@ -90,12 +106,16 @@ p {
   transition: all 0.4s;
 }
 
-.content-part .watch-online .watch-now-btn:hover {
+.content-part .watch-online .hero-btns-container .watch-now-btn:hover {
   color: #ffffff;
   border-radius: 100px;
   background: #0d444d;
   border: 0px solid #ffffff;
   cursor: pointer;
+}
+
+.content-part .watch-online .hero-btns-container .temp-hide {
+  display: none;
 }
 
 .content-part .wrapper-big-panda {
@@ -243,6 +263,93 @@ p {
   }
   .content-part .watch-online .watch-now-btn {
     margin-top: 37px;
+  }
+  .content-part .wrapper-big-panda .play-panda-video-btn {
+    background-image: url(../../assets/icons/play-btn.svg);
+    background-size: cover;
+    width: 84.47px;
+    height: 71px;
+    top: 54%;
+    left: calc(50% - 20px);
+  }
+  .content-part .wrapper-big-panda .video-panda-on-landing {
+    width: 559.65px;
+    height: 463.63px;
+    margin-top: 55px;
+    -webkit-mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
+            mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+  }
+  .content-part .wrapper-big-panda .video-panda-on-landing img {
+    width: 559.65px;
+    height: 463.63px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hero {
+    background-image: url(../../assets/images/landing-panda-640.svg);
+    background-position: bottom center;
+  }
+  .content-part {
+    max-width: 640px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .content-part .watch-online .first-h2 {
+    letter-spacing: 0px;
+    font-size: 36px;
+    line-height: 43px;
+    margin-top: 28px;
+    display: inline-block;
+    width: 315px;
+  }
+  .content-part .watch-online .second-h2 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .content-part .watch-online p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+    width: 294px;
+  }
+  .content-part .watch-online .hero-btns-container .watch-now-btn {
+    margin-top: 33px;
+    width: 170px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .content-part .watch-online .hero-btns-container .temp-hide {
+    display: block;
+    margin-top: 33px;
+    margin-left: 18px;
+    width: 170px;
+    height: 37px;
+    background: #ffffff;
+    border: 0px solid #ffffff;
+    -webkit-box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+            box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -1px;
+    color: #0d444d;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .content-part .watch-online .hero-btns-container .temp-hide:hover {
+    color: #ffffff;
+    border-radius: 100px;
+    background: #0d444d;
+    border: 0px solid #ffffff;
+    cursor: pointer;
   }
   .content-part .wrapper-big-panda .play-panda-video-btn {
     background-image: url(../../assets/icons/play-btn.svg);

@@ -1,0 +1,238 @@
+body {
+  margin: 0 auto;
+}
+
+.label404 {
+  width: 100%;
+  min-height: 535px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #f6f9fa;
+}
+
+.label404 img {
+  margin-top: -21px;
+}
+
+.label404 a {
+  text-decoration: none;
+}
+
+.label404 a .button-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+          filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+  border: 1.5px solid #19707d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 245px;
+  height: 52px;
+  background: #19707d;
+  border-radius: 100px;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.74px;
+  text-transform: uppercase;
+  letter-spacing: -0.7px;
+  margin-top: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.label404 a .button-home span {
+  text-decoration: none;
+  color: #f3f7f8;
+}
+
+.label404 a .button-home:hover {
+  background: #2a8086;
+  border: 1.5px solid #c5e1e6;
+  cursor: pointer;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.label404 a .button-home:hover span {
+  color: #cccccc;
+}
+
+.donate {
+  margin-top: -18px;
+  width: 100%;
+  min-height: 366px;
+  background-color: #f6f9fa;
+  background-image: url(../../assets/images/background-zoos-page.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.donate img {
+  position: absolute;
+}
+
+.donate .pinguin {
+  bottom: 39px;
+  left: 577px;
+}
+
+.donate .panda {
+  bottom: 107px;
+  left: 943px;
+}
+
+.donate .left-tree {
+  bottom: 118px;
+  left: 384px;
+}
+
+.donate .right-tree {
+  bottom: 0px;
+  right: 97px;
+}
+
+.donate .button-wrapper {
+  width: 100%;
+  max-width: 1480px;
+  height: 100%;
+  min-height: 366px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.donate .button-wrapper .button-donate {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 178px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+          filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+  border: 1.5px solid #19707d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 356px;
+  height: 52px;
+  background: #c5e1e6;
+  border-radius: 100px;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.74px;
+  color: #0d444d;
+  text-transform: uppercase;
+  letter-spacing: -0.7px;
+  margin-top: 71px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.donate .button-wrapper .button-donate span {
+  text-decoration: none;
+  color: #19707d;
+}
+
+.donate .button-wrapper .button-donate:hover {
+  background: #2a8086;
+  border: 1.5px solid #c5e1e6;
+  cursor: pointer;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.donate .button-wrapper .button-donate:hover span {
+  color: #cccccc;
+}
+
+@media (min-width: 1921px) {
+  .donate {
+    min-height: calc(100vw / 1920 * 366);
+  }
+  .donate .button-wrapper {
+    min-height: calc(100vw / 1480 * 366);
+  }
+}
+
+.buffer {
+  width: 100%;
+  height: 37px;
+  background-color: #2a8086;
+}
+
+@media (max-width: 1919px) {
+  .donate .pinguin {
+    left: 800px;
+  }
+  .donate .panda {
+    bottom: 64px;
+    left: 400px;
+  }
+  .donate .left-tree {
+    left: 100px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .donate .pinguin {
+    bottom: 39px;
+    left: 200px;
+  }
+  .donate .panda {
+    bottom: 8px;
+    left: 356px;
+  }
+  .donate .left-tree {
+    bottom: 118px;
+    left: 250px;
+  }
+  .donate .right-tree {
+    bottom: 58px;
+    left: 26px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

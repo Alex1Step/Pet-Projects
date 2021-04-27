@@ -1,0 +1,388 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper-header {
+  width: 100%;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2a8086;
+  -webkit-box-shadow: 0px -10px 9px -10px rgba(34, 60, 80, 0.6) inset;
+          box-shadow: 0px -10px 9px -10px rgba(34, 60, 80, 0.6) inset;
+}
+
+header {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .content {
+  width: 100%;
+  max-width: 1480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4px;
+}
+
+header .content .wrapper-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.74px;
+  color: #c5e1e5;
+}
+
+header .content .wrapper-nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+}
+
+header .content .wrapper-nav nav ul li {
+  white-space: nowrap;
+  margin-left: 2.75vw;
+  /* for animation */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c5e1e5), to(#c5e1e5));
+  background-image: linear-gradient(#c5e1e5, #c5e1e5);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+header .content .wrapper-nav nav ul li:hover {
+  background-size: 100% 2px;
+}
+
+header .content .wrapper-nav nav ul li:first-child {
+  border-bottom: 1px #c5e1e5 solid;
+  pointer-events: none;
+}
+
+header .content .wrapper-login {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #c5e1e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .content .wrapper-login ul li {
+  margin-left: 15px;
+}
+
+header .content .wrapper-login .search-form {
+  position: relative;
+}
+
+header .content .wrapper-login .search-icon {
+  position: absolute;
+  background-image: url(../../assets/icons/search.png);
+  width: 32px;
+  height: 32px;
+  top: 0;
+  right: 3px;
+  cursor: pointer;
+}
+
+header .content .wrapper-login .search {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+header .content .wrapper-login .search::-webkit-search-decoration,
+header .content .wrapper-login .search::-webkit-search-cancel-button {
+  display: none;
+}
+
+header .content .wrapper-login .search {
+  width: 32px;
+  height: 32px;
+  padding-left: 10px;
+  background-color: #2a8086;
+  border: 1px solid #2a8086;
+  color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .content .wrapper-login .search::-webkit-input-placeholder {
+  color: #2a8086;
+}
+
+header .content .wrapper-login .search:-ms-input-placeholder {
+  color: #2a8086;
+}
+
+header .content .wrapper-login .search::-ms-input-placeholder {
+  color: #2a8086;
+}
+
+header .content .wrapper-login .search::placeholder {
+  color: #2a8086;
+}
+
+header .content .wrapper-login .search:focus {
+  outline: none;
+  width: 150px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+  border-radius: 5em;
+  border: 1px solid #c5e1e6;
+}
+
+header .content .wrapper-login .login-btn {
+  width: 97px;
+  height: 52px;
+  background-color: #2a8086;
+  border: 0px solid #2a8086;
+  outline: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .content .wrapper-login .login-btn:hover {
+  border: 1px solid #c5e1e6;
+  border-radius: 100px;
+  background-color: #c5e1e6;
+  color: #2a8086;
+  cursor: pointer;
+}
+
+header .content .wrapper-login .signup-btn {
+  width: 97px;
+  height: 52px;
+  background-color: #2a8086;
+  border: 1px solid #c5e1e6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .content .wrapper-login .signup-btn:hover {
+  background-color: #c5e1e6;
+  color: #2a8086;
+  cursor: pointer;
+}
+
+header .content .wrapper-login .profile-btn {
+  display: none;
+}
+
+header .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .content ul li {
+  list-style-type: none;
+}
+
+header .content ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #c5e1e5;
+}
+
+header .content ul li button {
+  color: #c5e1e5;
+}
+
+@media screen and (max-width: 1919px) {
+  header .wrapper-header {
+    height: 124px;
+  }
+  header .content {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 13px;
+  }
+  header .content .wrapper-nav nav ul li {
+    margin-left: 3.75vw;
+  }
+  header .content .wrapper-login ul li {
+    margin-left: 10px;
+  }
+  header .content .wrapper-login .signup-btn {
+    display: none;
+  }
+  header .content .wrapper-login .login-btn {
+    display: none;
+  }
+  header .content .wrapper-login .profile-btn {
+    display: inline;
+  }
+}
+
+.show-burger-menu {
+  display: none;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 374px;
+  top: 78px;
+  background: #2a8086;
+}
+
+.show-burger-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.show-burger-menu ul li {
+  padding: 16px 0;
+  list-style-type: none;
+}
+
+.show-burger-menu ul li a {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f3f7f8;
+  text-align: center;
+}
+
+.show-burger-menu.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1199px) {
+  .forFixed {
+    display: block;
+    height: 78px;
+  }
+  .wrapper-header {
+    z-index: 5;
+    position: fixed;
+    height: 78px;
+  }
+  header .content {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+    max-width: 640px;
+  }
+  header .content .wrapper-nav .header-logo svg {
+    width: 49.08px;
+    height: 38px;
+  }
+  header .content .wrapper-nav nav {
+    display: none;
+  }
+  header .content .wrapper-nav nav ul li {
+    display: none;
+  }
+  header .content .wrapper-login {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  header .content .wrapper-login ul li {
+    display: none;
+  }
+  header .content .wrapper-login .burger {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    background-image: url(../../assets/icons/Burger-menu.svg);
+  }
+}
+/*# sourceMappingURL=header.css.map */

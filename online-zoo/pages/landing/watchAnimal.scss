@@ -1,0 +1,313 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+//temp
+// body {
+//   width: 640px;
+// }
+
+.hero {
+  width: 100%;
+  background-image: url(../../assets/images/landing-panda-1920.svg);
+  background-color: #f6f9fa;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-part {
+  width: 100%;
+  max-width: 1480px;
+  min-height: 803px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .watch-online {
+    .first-h2 {
+      margin-top: 102px;
+      font-family: "Rubik", monospace;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 72px;
+      line-height: 85.32px;
+      color: #f3f7f8;
+    }
+    .second-h2 {
+      font-family: "Rubik", monospace;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 75.84px;
+      color: #f3f7f8;
+    }
+    p {
+      display: inline-block;
+      width: 450px;
+      margin-top: 29px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #f3f7f8;
+    }
+    .hero-btns-container {
+      a {
+        text-decoration: none;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .watch-now-btn {
+        width: 258px;
+        height: 52px;
+        margin-top: 86px;
+        background: #ffffff;
+        border: 0px solid #ffffff;
+        box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+        border-radius: 100px;
+        text-transform: uppercase;
+        font-family: "Roboto Mono", monospace;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23.74px;
+        letter-spacing: -1px;
+        color: #0d444d;
+        transition: all 0.4s;
+        &:hover {
+          color: #ffffff;
+          border-radius: 100px;
+          background: #0d444d;
+          border: 0px solid #ffffff;
+          cursor: pointer;
+        }
+      }
+      .temp-hide {
+        display: none;
+      }
+    }
+  }
+  .wrapper-big-panda {
+    position: relative;
+    .play-panda-video-btn {
+      background-image: url(../../assets/icons/play-btn.svg);
+      width: 120.21px;
+      height: 120.21px;
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 29px);
+      z-index: 5;
+      transition: all 0.6s;
+      &:hover {
+        background-image: url(../../assets/icons/play-btn-hover.svg);
+      }
+    }
+    .video-panda-on-landing {
+      width: 803px;
+      height: 666px;
+      margin-top: 47px;
+      // clip-path: url(#hero-mask);
+      mask-image: url(../../assets/images/mask-for-panda.svg);
+      mask-repeat: no-repeat;
+      img {
+        width: 803px;
+        height: 666px;
+        transition: all 0.6s;
+        &:hover + .play-panda-video-btn {
+          background-image: url(../../assets/icons/play-btn-hover.svg);
+        }
+        &:hover {
+          animation: pulse 4s infinite;
+        }
+        @keyframes pulse {
+          0% {
+            filter: brightness(100%);
+          }
+          20% {
+            filter: brightness(110%);
+          }
+          40% {
+            filter: brightness(120%);
+            transform: scale(1.05, 1.05);
+          }
+          60% {
+            filter: brightness(130%);
+          }
+          80% {
+            filter: brightness(120%);
+          }
+          100% {
+            filter: brightness(100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1921px) {
+  .hero {
+    min-height: calc(100vw / 1920 * 781);
+  }
+}
+
+//adaptive 1200
+@media (max-width: 1919px) {
+  .hero {
+    background-image: url(../../assets/images/landing-panda-1200.svg);
+    background-position: bottom center;
+  }
+  @media (max-width: 1919px) and (min-width: 1200px) {
+    .hero {
+      min-height: calc(100vw / 1200 * 675);
+    }
+  }
+  .content-part {
+    max-width: 1200px;
+    min-height: 675px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .watch-online {
+      .first-h2 {
+        letter-spacing: -4px;
+      }
+      .second-h2 {
+        font-size: 48px;
+        line-height: 56.88px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 24px;
+        width: 480px;
+      }
+      .watch-now-btn {
+        margin-top: 37px;
+      }
+    }
+    .wrapper-big-panda {
+      .play-panda-video-btn {
+        background-image: url(../../assets/icons/play-btn.svg);
+        background-size: cover;
+        width: 84.47px;
+        height: 71px;
+        top: 54%;
+        left: calc(50% - 20px);
+      }
+      .video-panda-on-landing {
+        width: 559.65px;
+        height: 463.63px;
+        margin-top: 55px;
+        mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
+        mask-repeat: no-repeat;
+        img {
+          width: 559.65px;
+          height: 463.63px;
+        }
+      }
+    }
+  }
+}
+
+//adaptive 640
+@media (max-width: 1199px) {
+  .hero {
+    background-image: url(../../assets/images/landing-panda-640.svg);
+    background-position: bottom center;
+  }
+  // @media (max-width: 1919px) and (min-width: 1200px) {
+  //   .hero {
+  //     min-height: calc(100vw / 1200 * 675);
+  //   }
+  // }
+  .content-part {
+    max-width: 640px;
+    // min-height: 675px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .watch-online {
+      .first-h2 {
+        letter-spacing: 0px;
+        font-size: 36px;
+        line-height: 43px;
+        margin-top: 28px;
+        display: inline-block;
+        width: 315px;
+      }
+      .second-h2 {
+        font-size: 30px;
+        line-height: 37px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 20px;
+        width: 294px;
+      }
+      .hero-btns-container {
+        .watch-now-btn {
+          margin-top: 33px;
+          width: 170px;
+          height: 37px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .temp-hide {
+          display: block;
+          margin-top: 33px;
+          margin-left: 18px;
+          width: 170px;
+          height: 37px;
+          background: #ffffff;
+          border: 0px solid #ffffff;
+          box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+          border-radius: 100px;
+          text-transform: uppercase;
+          font-family: "Roboto Mono", monospace;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: -1px;
+          color: #0d444d;
+          transition: all 0.4s;
+          &:hover {
+            color: #ffffff;
+            border-radius: 100px;
+            background: #0d444d;
+            border: 0px solid #ffffff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .wrapper-big-panda {
+      .play-panda-video-btn {
+        background-image: url(../../assets/icons/play-btn.svg);
+        background-size: cover;
+        width: 84.47px;
+        height: 71px;
+        top: 54%;
+        left: calc(50% - 20px);
+      }
+      .video-panda-on-landing {
+        width: 559.65px;
+        height: 463.63px;
+        margin-top: 55px;
+        mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
+        mask-repeat: no-repeat;
+        img {
+          width: 559.65px;
+          height: 463.63px;
+        }
+      }
+    }
+  }
+}

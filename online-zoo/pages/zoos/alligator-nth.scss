@@ -1,0 +1,14 @@
+main {
+  .sidebar {
+    .animal-icon:nth-child(4) .outer-pic {
+      background-color: #2a8086;
+      pointer-events: none;
+    }
+    .animal-icon:nth-child(4) {
+      cursor: default;
+    }
+    .animal-icon:nth-child(4):active {
+      pointer-events: none;
+    }
+  }
+}

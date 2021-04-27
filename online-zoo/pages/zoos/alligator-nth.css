@@ -1,0 +1,13 @@
+main .sidebar .animal-icon:nth-child(4) .outer-pic {
+  background-color: #2a8086;
+  pointer-events: none;
+}
+
+main .sidebar .animal-icon:nth-child(4) {
+  cursor: default;
+}
+
+main .sidebar .animal-icon:nth-child(4):active {
+  pointer-events: none;
+}
+/*# sourceMappingURL=alligator-nth.css.map */

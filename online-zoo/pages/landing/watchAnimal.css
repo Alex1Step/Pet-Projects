@@ -291,9 +291,22 @@ p {
   .hero {
     background-image: url(../../assets/images/landing-panda-640.svg);
     background-position: bottom center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
+}
+
+@media (max-width: 1199px) and (max-width: 1199px) and (min-width: 640px) {
+  .hero {
+    min-height: calc(100vw / 640 * 403);
+  }
+}
+
+@media (max-width: 1199px) {
   .content-part {
     max-width: 640px;
+    min-height: 0px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -351,26 +364,29 @@ p {
     border: 0px solid #ffffff;
     cursor: pointer;
   }
+  .content-part .wrapper-big-panda {
+    margin-top: 35px;
+  }
   .content-part .wrapper-big-panda .play-panda-video-btn {
     background-image: url(../../assets/icons/play-btn.svg);
     background-size: cover;
     width: 84.47px;
     height: 71px;
-    top: 54%;
-    left: calc(50% - 20px);
+    top: 32%;
+    left: calc(59% - 62px);
   }
   .content-part .wrapper-big-panda .video-panda-on-landing {
-    width: 559.65px;
-    height: 463.63px;
-    margin-top: 55px;
-    -webkit-mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
-            mask-image: url(../../assets/images/mask-for-panda-adapt1200.svg);
+    width: 255px;
+    height: 211px;
+    margin-top: 0px;
+    -webkit-mask-image: url(../../assets/images/mask-for-panda-adapt-640.svg);
+            mask-image: url(../../assets/images/mask-for-panda-adapt-640.svg);
     -webkit-mask-repeat: no-repeat;
             mask-repeat: no-repeat;
   }
   .content-part .wrapper-big-panda .video-panda-on-landing img {
-    width: 559.65px;
-    height: 463.63px;
+    width: 255px;
+    height: 211px;
   }
 }
 /*# sourceMappingURL=watchAnimal.css.map */
